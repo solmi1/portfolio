@@ -1,0 +1,171 @@
+.community{
+    .sub_visual{
+        h1{
+            &::after{
+                width: 300px;
+            }
+        }
+    }
+
+    .inner{
+        .btn{
+            text-align: center;
+            margin-bottom: 80px;
+
+            >a{
+                display: inline-block;
+                width: 100px;
+                height: 40px;
+                background: #ee7d31;
+                color: #fff;
+                text-align: center;
+                line-height: 40px;
+                margin-right: 20px;
+                font: 500 12px/40px 'Roboto';
+                border: 1px solid transparent;
+
+                &:hover{
+                    background-color: rgba(238, 125, 49, 0.4);
+                    border: 1px solid #ee7d31;
+                    color: #ee7d31;
+                }
+            }
+        }  
+
+        table{
+            width: 100%;
+            margin-bottom: 50px;
+
+            tr{
+                th{
+                    padding: 15px;
+                    color: #ee7d31;
+                    border-top: 1px solid #ddd;
+                    border-bottom: 1px solid #ddd;
+                    font: bold 14px/1 'Roboto';
+
+                    &:nth-of-type(1){width: 8%;}
+                    &:nth-of-type(3){width: 15%;}
+                    &:nth-of-type(4){width: 15%;}
+                }
+
+                td{
+                    padding: 20px 5px;
+                    border-bottom: 1px solid #ddd;
+                    text-align: center;
+                    font: 300 12px/1 'Roboto';
+
+
+                    &:nth-of-type(2){text-align: left;}
+
+                    a{
+                        color: #333;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .pagenation{
+            width: 30%;
+            margin: 0 auto;
+            text-align: center;
+
+            &::after{
+                content: '';
+                display: block;
+                clear: both;
+            }
+
+            .prev{
+                float: left;
+                display: block;
+                width: 30px;
+                height: 30px;
+                font: 20px/30px 'Roboto';
+                color: #ee7d31;
+                text-align: center;
+            }
+
+            .next{
+                float: right;
+                display: block;
+                width: 30px;
+                height: 30px;
+                font: 20px/30px 'Roboto';
+                color: #ee7d31;
+                text-align: center;
+            }
+
+            .numbers{
+                display: inline-block;
+                font-size: 0;
+
+                a{
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    font: bold 11px/30px 'Roboto';
+                    color: #666;
+                    margin: 0 5px;
+                    transition: 0.5s;
+
+                    &:hover{
+                        color: #ee7d31;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$tablet){
+    .community{
+        .sub_visual{
+            height: 250px;
+            padding: 150px 50px 0;
+    
+    
+            h1{
+                font-size: 30px;
+    
+                &::after{
+                    width: 180px;
+                    top: 25px;
+                }
+            }
+        }
+    
+        .inner{
+            width: 100%;
+            padding: 100px 20px;
+            box-sizing: border-box;
+    
+            h1{
+                font-size: 24px;
+                margin-bottom: 100px;
+            }
+
+            .pagenation{
+                width: 100%;
+            }
+        } 
+    }
+}
+
+
+@media screen and (max-width:$mobile){
+    table{
+        tr{
+            th{
+                &:nth-of-type(1){width: 8%;}
+                &:nth-of-type(3){width: 15%;}
+                &:nth-of-type(4){display: none;}
+            }
+
+            td{
+                &:nth-of-type(4){display: none;}
+            }
+        }
+    }
+}
