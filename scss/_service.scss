@@ -9,8 +9,10 @@
 
     .inner{
         width: 1180px;
-        margin: 0 auto;
+        height: 100vh;
         padding: 150px 0;
+        margin: 0 auto;
+        position: relative;
 
         h1{
             font-weight: bold;
@@ -20,15 +22,24 @@
             text-align: center;
         }
 
+        .btn{
+            display: block;
+            width: 100px;
+            height: 30px;
+            background-color: #ee7d31;
+            text-align: center;
+            font: 500 14px/30px 'Roboto';
+            color: #fff;
+            box-shadow: -5px 5px 10px rgba(160, 160, 160, 0.3);
+            transition: all 0.5s;
+            border: 1px solid transparent;
+        }
+
         .wrap{
             width: 100%;
-            position: relative;
-
-            &::after{
-                content: '';
-                display: block;
-                clear: both;
-            }
+            position: absolute;
+            left: -150%;
+            top: 400px;
 
             article{
                 width: 70%;
@@ -36,8 +47,6 @@
                 box-sizing: border-box;
                 box-shadow: -5px 5px 10px rgba(160, 160, 160, 0.3);
                 position: relative;
-                margin-bottom: 100px;
-                float: left;
 
                 &::after{
                     content: '';
@@ -53,9 +62,10 @@
 
                 h1{
                     font-weight: 900;
-                    font-size: 36px;
+                    font-size: 24px;
                     margin-bottom: 15px;
-                    color: #333;
+                    color: #666;
+                    text-align: left;
                 }
 
                 p{
@@ -92,15 +102,18 @@
                 height: 350px;
                 position: absolute;
                 z-index: -99;
-                top: 14%;
-                right: 0;
+                top: 75px;
+                left: -100%;
                 filter: grayscale(1);
             }
 
-            &:nth-of-type(2){
+            &:nth-of-type(3){
+                top: 1000px;
+                left: auto;
+                right: -150%;
+                
                 article{
-                    float: right;
-
+                    right: 0;
                     &::after{
                         left: -150px;
                     }
@@ -113,8 +126,11 @@
             }
         }
 
-        a{
-            margin: 0 auto;
+        >a{
+            position: absolute;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
             display: block;
             width: 250px;
             height: 60px;

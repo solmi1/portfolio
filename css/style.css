@@ -251,8 +251,10 @@ footer p {
 }
 .service .inner {
   width: 1180px;
-  margin: 0 auto;
+  height: 100vh;
   padding: 150px 0;
+  margin: 0 auto;
+  position: relative;
 }
 .service .inner h1 {
   font-weight: bold;
@@ -261,14 +263,23 @@ footer p {
   color: #aaa;
   text-align: center;
 }
+.service .inner .btn {
+  display: block;
+  width: 100px;
+  height: 30px;
+  background-color: #ee7d31;
+  text-align: center;
+  font: 500 14px/30px "Roboto";
+  color: #fff;
+  box-shadow: -5px 5px 10px rgba(160, 160, 160, 0.3);
+  transition: all 0.5s;
+  border: 1px solid transparent;
+}
 .service .inner .wrap {
   width: 100%;
-  position: relative;
-}
-.service .inner .wrap::after {
-  content: "";
-  display: block;
-  clear: both;
+  position: absolute;
+  left: -150%;
+  top: 400px;
 }
 .service .inner .wrap article {
   width: 70%;
@@ -276,8 +287,6 @@ footer p {
   box-sizing: border-box;
   box-shadow: -5px 5px 10px rgba(160, 160, 160, 0.3);
   position: relative;
-  margin-bottom: 100px;
-  float: left;
 }
 .service .inner .wrap article::after {
   content: "";
@@ -292,9 +301,10 @@ footer p {
 }
 .service .inner .wrap article h1 {
   font-weight: 900;
-  font-size: 36px;
+  font-size: 24px;
   margin-bottom: 15px;
-  color: #333;
+  color: #666;
+  text-align: left;
 }
 .service .inner .wrap article p {
   font-weight: 300;
@@ -327,22 +337,30 @@ footer p {
   height: 350px;
   position: absolute;
   z-index: -99;
-  top: 14%;
-  right: 0;
+  top: 75px;
+  left: -100%;
   filter: grayscale(1);
 }
-.service .inner .wrap:nth-of-type(2) article {
-  float: right;
+.service .inner .wrap:nth-of-type(3) {
+  top: 1000px;
+  left: auto;
+  right: -150%;
 }
-.service .inner .wrap:nth-of-type(2) article::after {
+.service .inner .wrap:nth-of-type(3) article {
+  right: 0;
+}
+.service .inner .wrap:nth-of-type(3) article::after {
   left: -150px;
 }
-.service .inner .wrap:nth-of-type(2) .img {
+.service .inner .wrap:nth-of-type(3) .img {
   background: url(../img/pexels-essow-936722.jpg) no-repeat center/cover;
   left: 0;
 }
-.service .inner a {
-  margin: 0 auto;
+.service .inner > a {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
   display: block;
   width: 250px;
   height: 60px;
@@ -354,7 +372,7 @@ footer p {
   transition: all 0.5s;
   border: 1px solid transparent;
 }
-.service .inner a:hover {
+.service .inner > a:hover {
   background-color: rgba(238, 125, 49, 0.4);
   border: 1px solid #ee7d31;
   color: #ee7d31;
@@ -1232,11 +1250,13 @@ footer p {
   font-size: 20px;
 }
 .about .inner .wrap:nth-of-type(4) article h2 {
+  font: bold 20px/1 "arial";
   margin-bottom: 10px;
   color: #757575;
 }
 .about .inner .wrap:nth-of-type(4) article p {
   color: #aaa;
+  font: normal 12px/1 "arial";
 }
 .about .inner .wrap:nth-of-type(5) > p {
   width: 70%;
