@@ -30,13 +30,13 @@ btn.addEventListener("click", ()=>{
                 duration:700,
                 callback:()=>{
                     new Anim(box2,{
-                        prop:"right",
-                        value:0,
+                        prop:"left",
+                        value:354,
                         duration:700,
                         callback:()=>{
                             new Anim(img2,{
                                 prop:"left",
-                                value:0,
+                                value:-354,
                                 duration:700,
                             })
                         }

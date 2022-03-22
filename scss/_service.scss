@@ -33,6 +33,7 @@
             box-shadow: -5px 5px 10px rgba(160, 160, 160, 0.3);
             transition: all 0.5s;
             border: 1px solid transparent;
+            cursor: pointer;
         }
 
         .wrap{
@@ -109,11 +110,9 @@
 
             &:nth-of-type(3){
                 top: 1000px;
-                left: auto;
-                right: -150%;
                 
                 article{
-                    right: 0;
+
                     &::after{
                         left: -150px;
                     }
@@ -121,7 +120,6 @@
 
                 .img{
                     background: url(../img/pexels-essow-936722.jpg) no-repeat center/cover;
-                    left: 0;
                 }
             }
         }
@@ -150,6 +148,8 @@
         }
     }
 }
+
+
 
 @media screen and (max-width:$tablet){
     #header_sub{
