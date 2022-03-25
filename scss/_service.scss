@@ -38,9 +38,9 @@
 
         .wrap{
             width: 100%;
-            position: absolute;
+            position: relative;
             left: -150%;
-            top: 400px;
+            top: 100px;
 
             article{
                 width: 70%;
@@ -109,10 +109,9 @@
             }
 
             &:nth-of-type(3){
-                top: 1000px;
+                top: 250px;
                 
                 article{
-
                     &::after{
                         left: -150px;
                     }

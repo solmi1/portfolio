@@ -11,6 +11,7 @@ btnCall.onclick = function(e){
 }
 
 
+
 // 서비스 페이지에 들어왔을 때 특정 스크롤 위치에서 박스가 차례대로 나오게
 const btn = document.querySelector(".btn");
 const box1 = document.querySelector(".box1");
@@ -46,4 +47,3 @@ btn.addEventListener("click", ()=>{
         }
     })
 })
-

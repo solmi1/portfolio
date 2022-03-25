@@ -198,7 +198,7 @@ table {
   height: 10px;
   background-color: rgba(238, 125, 49, 0.5);
   position: absolute;
-  bottom: 12px;
+  bottom: 8px;
   z-index: -1;
 }
 .content .inner {
@@ -278,9 +278,9 @@ footer p {
 }
 .service .inner .wrap {
   width: 100%;
-  position: absolute;
+  position: relative;
   left: -150%;
-  top: 400px;
+  top: 100px;
 }
 .service .inner .wrap article {
   width: 70%;
@@ -343,7 +343,7 @@ footer p {
   filter: grayscale(1);
 }
 .service .inner .wrap:nth-of-type(3) {
-  top: 1000px;
+  top: 250px;
 }
 .service .inner .wrap:nth-of-type(3) article::after {
   left: -150px;
@@ -477,587 +477,6 @@ footer p {
   }
   .service .inner .wrap:nth-of-type(2) article::after {
     left: -20px;
-  }
-}
-.pricing .sub_visual h1::after {
-  width: 200px;
-}
-.pricing .inner {
-  width: 1180px;
-  margin: 0 auto;
-  padding: 150px 0;
-}
-.pricing .inner h1 {
-  font-weight: bold;
-  font-size: 30px;
-  margin-bottom: 150px;
-  color: #aaa;
-  text-align: center;
-}
-.pricing .inner table {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-spacing: 10px 0;
-  margin-bottom: 80px;
-}
-.pricing .inner table caption {
-  text-indent: -9999px;
-  opacity: 0;
-}
-.pricing .inner table th {
-  font: 700 20px/1 "Roboto";
-  color: #444;
-  padding: 15px;
-}
-.pricing .inner table th:nth-of-type(1) {
-  width: 15%;
-}
-.pricing .inner table th:nth-of-type(2) {
-  width: 25%;
-}
-.pricing .inner table th:nth-of-type(3) {
-  width: 25%;
-}
-.pricing .inner table th:nth-of-type(4) {
-  width: 25%;
-}
-.pricing .inner table tbody tr {
-  font: 300 16px/1 "Roboto";
-  color: #777;
-}
-.pricing .inner table tbody tr:nth-of-type(1) {
-  font: bold 30px/1 "Roboto";
-  color: #ee7d31;
-}
-.pricing .inner table tbody tr td {
-  padding: 25px;
-  border-right: 1px solid #dddddd;
-}
-.pricing .inner table tbody tr td:nth-of-type(1) {
-  font: bold 16px/1 "";
-}
-.pricing .inner table tbody tr td:nth-of-type(1) strong {
-  font: bold 30px/1 "Roboto";
-}
-.pricing .inner table tbody tr td:nth-of-type(4) {
-  border-right: 0;
-}
-.pricing .inner table tbody tr td strong {
-  font-weight: 500;
-  color: #ee7d31;
-}
-.pricing .inner a {
-  display: block;
-  margin: 0 auto;
-  width: 250px;
-  height: 60px;
-  background-color: #ee7d31;
-  text-align: center;
-  font: 500 14px/60px "Roboto";
-  color: #fff;
-  box-shadow: -5px 5px 10px rgba(160, 160, 160, 0.3);
-  transition: all 0.5s;
-  border: 1px solid transparent;
-}
-.pricing .inner a:hover {
-  background-color: rgba(238, 125, 49, 0.4);
-  border: 1px solid #ee7d31;
-  color: #ee7d31;
-}
-
-footer {
-  width: 100%;
-  margin-bottom: 30px;
-}
-footer p {
-  font-size: 12px;
-  font-weight: 300;
-  text-align: center;
-}
-
-@media screen and (max-width: 1179px) {
-  #header_sub .inner {
-    width: 100%;
-    height: 100px;
-  }
-  #header_sub .inner h1 {
-    width: 100%;
-    background-color: #ee7d31;
-    float: none;
-  }
-  #header_sub .inner h1 a i {
-    font-size: 70px;
-    line-height: 100px;
-    color: #fff;
-  }
-  #header_sub .inner .menuWeb {
-    display: none;
-  }
-  #header_sub .inner .btnCall {
-    display: block;
-  }
-
-  .pricing .sub_visual {
-    height: 250px;
-    padding: 150px 50px 0;
-  }
-  .pricing .sub_visual h1 {
-    font-size: 30px;
-  }
-  .pricing .sub_visual h1::after {
-    width: 125px;
-    top: 25px;
-  }
-  .pricing .inner {
-    width: 100%;
-    padding: 100px 20px;
-    box-sizing: border-box;
-  }
-  .pricing .inner h1 {
-    font-size: 24px;
-    margin-bottom: 100px;
-  }
-  .pricing .inner table {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    border-spacing: 10px 0;
-    margin-bottom: 80px;
-    border: 1px solid;
-  }
-  .pricing .inner table caption {
-    text-indent: -9999px;
-    opacity: 0;
-  }
-  .pricing .inner table th {
-    font: 700 20px/1 "Roboto";
-    color: #444;
-    padding: 15px;
-  }
-  .pricing .inner table th:nth-of-type(1) {
-    width: 25%;
-  }
-  .pricing .inner table th:nth-of-type(2) {
-    width: 25%;
-  }
-  .pricing .inner table th:nth-of-type(3) {
-    width: 25%;
-  }
-  .pricing .inner table th:nth-of-type(4) {
-    width: 25%;
-  }
-  .pricing .inner table tbody tr {
-    font: 300 16px/1 "Roboto";
-    color: #777;
-  }
-  .pricing .inner table tbody tr:nth-of-type(1) {
-    font: bold 30px/1 "Roboto";
-    color: #ee7d31;
-  }
-  .pricing .inner table tbody tr td {
-    padding: 25px;
-    border-right: 1px solid #dddddd;
-  }
-  .pricing .inner table tbody tr td:nth-of-type(1) {
-    font: bold 16px/1 "";
-  }
-  .pricing .inner table tbody tr td:nth-of-type(1) strong {
-    font: bold 30px/1 "Roboto";
-  }
-  .pricing .inner table tbody tr td:nth-of-type(4) {
-    border-right: 0;
-  }
-  .pricing .inner table tbody tr td strong {
-    font-weight: 500;
-    color: #ee7d31;
-  }
-  .pricing .inner a {
-    display: block;
-    margin: 0 auto;
-    width: 250px;
-    height: 60px;
-    background-color: #ee7d31;
-    text-align: center;
-    font: 500 14px/60px "Roboto";
-    color: #fff;
-    box-shadow: -5px 5px 10px rgba(160, 160, 160, 0.3);
-    transition: all 0.5s;
-  }
-  .pricing .inner a:hover {
-    background-color: rgba(238, 125, 49, 0.4);
-    border: 1px solid #ee7d31;
-    color: #ee7d31;
-  }
-}
-@media screen and (max-width: 539px) {
-  .pricing .sub_visual {
-    height: 250px;
-    padding: 0;
-  }
-  .pricing .sub_visual h1 {
-    font-size: 30px;
-    text-align: center;
-    line-height: 250px;
-  }
-  .pricing .sub_visual h1::after {
-    width: 130px;
-    position: absolute;
-    top: 130px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .pricing .inner {
-    padding: 100px 30px;
-  }
-}
-.community .sub_visual h1::after {
-  width: 300px;
-}
-.community .inner .btn {
-  text-align: center;
-  margin-bottom: 80px;
-}
-.community .inner .btn > a {
-  display: inline-block;
-  width: 100px;
-  height: 40px;
-  background: #ee7d31;
-  color: #fff;
-  text-align: center;
-  line-height: 40px;
-  margin-right: 20px;
-  font: 500 12px/40px "Roboto";
-  border: 1px solid transparent;
-}
-.community .inner .btn > a:hover {
-  background-color: rgba(238, 125, 49, 0.4);
-  border: 1px solid #ee7d31;
-  color: #ee7d31;
-}
-.community .inner table {
-  width: 100%;
-  margin-bottom: 50px;
-}
-.community .inner table tr th {
-  padding: 15px;
-  color: #ee7d31;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  font: bold 14px/1 "Roboto";
-}
-.community .inner table tr th:nth-of-type(1) {
-  width: 8%;
-}
-.community .inner table tr th:nth-of-type(3) {
-  width: 15%;
-}
-.community .inner table tr th:nth-of-type(4) {
-  width: 15%;
-}
-.community .inner table tr td {
-  padding: 20px 5px;
-  border-bottom: 1px solid #ddd;
-  text-align: center;
-  font: 300 12px/1 "Roboto";
-}
-.community .inner table tr td:nth-of-type(2) {
-  text-align: left;
-}
-.community .inner table tr td a {
-  color: #333;
-  font-weight: 500;
-}
-.community .inner .pagenation {
-  width: 30%;
-  margin: 0 auto;
-  text-align: center;
-}
-.community .inner .pagenation::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.community .inner .pagenation .prev {
-  float: left;
-  display: block;
-  width: 30px;
-  height: 30px;
-  font: 20px/30px "Roboto";
-  color: #ee7d31;
-  text-align: center;
-}
-.community .inner .pagenation .next {
-  float: right;
-  display: block;
-  width: 30px;
-  height: 30px;
-  font: 20px/30px "Roboto";
-  color: #ee7d31;
-  text-align: center;
-}
-.community .inner .pagenation .numbers {
-  display: inline-block;
-  font-size: 0;
-}
-.community .inner .pagenation .numbers a {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  font: bold 11px/30px "Roboto";
-  color: #666;
-  margin: 0 5px;
-  transition: 0.5s;
-}
-.community .inner .pagenation .numbers a:hover {
-  color: #ee7d31;
-}
-
-@media screen and (max-width: 1179px) {
-  .community .sub_visual {
-    height: 250px;
-    padding: 150px 50px 0;
-  }
-  .community .sub_visual h1 {
-    font-size: 30px;
-  }
-  .community .sub_visual h1::after {
-    width: 180px;
-    top: 25px;
-  }
-  .community .inner {
-    width: 100%;
-    padding: 100px 20px;
-    box-sizing: border-box;
-  }
-  .community .inner h1 {
-    font-size: 24px;
-    margin-bottom: 100px;
-  }
-  .community .inner .pagenation {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 539px) {
-  table tr th:nth-of-type(1) {
-    width: 8%;
-  }
-  table tr th:nth-of-type(3) {
-    width: 15%;
-  }
-  table tr th:nth-of-type(4) {
-    display: none;
-  }
-  table tr td:nth-of-type(4) {
-    display: none;
-  }
-}
-.contact .sub_visual h1::after {
-  width: 230px;
-}
-.contact .inner h1 {
-  margin-bottom: 10px;
-}
-.contact .inner p {
-  text-align: center;
-  font: 14px/1 "Roboto";
-  color: #757575;
-  margin-bottom: 50px;
-}
-.contact .inner fieldset {
-  border: none;
-  width: 100%;
-  height: 600px;
-}
-.contact .inner fieldset fieldset::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.contact .inner fieldset .map {
-  float: left;
-  width: 50%;
-  height: 100%;
-  position: relative;
-}
-.contact .inner fieldset .map::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(238, 125, 49, 0.5);
-  top: 0;
-}
-.contact .inner fieldset .map iframe {
-  width: 100%;
-  height: 100%;
-  filter: grayscale(1);
-}
-.contact .inner fieldset table {
-  width: 50%;
-  height: 100%;
-  padding: 50px;
-  box-sizing: border-box;
-}
-.contact .inner fieldset table tr td h2 {
-  margin-bottom: 10px;
-}
-.contact .inner fieldset table tr td h2 label {
-  font: 14px/1 "Roboto";
-  color: #555;
-}
-.contact .inner fieldset table tr td a {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: #ee7d31;
-  margin-right: 15px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-.contact .inner fieldset table tr td a i {
-  color: #fff;
-  line-height: 30px;
-}
-.contact .inner fieldset table tr:nth-of-type(2) {
-  display: inline-block;
-  margin-bottom: 20px;
-  width: 100%;
-}
-.contact .inner fieldset table tr:nth-of-type(2) td {
-  display: block;
-}
-.contact .inner fieldset table tr:nth-of-type(2) td input {
-  width: 48%;
-  height: 40px;
-  margin-right: 3%;
-  border: none;
-  box-shadow: 2px 5px 15px #eee;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-.contact .inner fieldset table tr:nth-of-type(2) td input:last-child {
-  margin-right: 0;
-}
-.contact .inner fieldset table tr:nth-of-type(2) td input::placeholder {
-  font: normal 12px/1 "Roboti";
-  color: #a7a7a7;
-}
-.contact .inner fieldset table tr:nth-of-type(3) textarea {
-  width: 100%;
-  height: 200px;
-  padding: 20px;
-  box-sizing: border-box;
-  border: none;
-  box-shadow: 2px 5px 15px #eee;
-  margin-bottom: 30px;
-  resize: none;
-}
-.contact .inner fieldset table tr:nth-of-type(3) textarea::placeholder {
-  font: normal 12px/1 "Roboto";
-  color: #a7a7a7;
-}
-.contact .inner fieldset table tr:nth-of-type(4) th {
-  float: left;
-  position: relative;
-}
-.contact .inner fieldset table tr:nth-of-type(4) th input {
-  width: 200px;
-  height: 60px;
-  background: #ee7d31;
-  color: #fff;
-  border: none;
-}
-.contact .inner fieldset table tr:nth-of-type(4) th input:hover {
-  background-color: rgba(238, 125, 49, 0.4);
-  border: 1px solid #ee7d31;
-  color: #ee7d31;
-}
-.contact .inner fieldset table tr:nth-of-type(4) th i {
-  position: absolute;
-  color: #fff;
-  font-size: 12px;
-  top: 50%;
-  right: 68px;
-  transform: translateY(-50%);
-}
-
-@media screen and (max-width: 1179px) {
-  .contact .sub_visual {
-    height: 250px;
-    padding: 150px 50px 0;
-  }
-  .contact .sub_visual h1 {
-    font-size: 30px;
-  }
-  .contact .sub_visual h1::after {
-    width: 140px;
-    top: 25px;
-  }
-  .contact .inner {
-    width: 100%;
-    padding: 100px 20px;
-    box-sizing: border-box;
-  }
-  .contact .inner h1 {
-    font-size: 24px;
-  }
-  .contact .inner p {
-    margin-bottom: 100px;
-  }
-  .contact .inner fieldset {
-    width: 100%;
-    height: 100%;
-  }
-  .contact .inner fieldset .map {
-    width: 100%;
-    height: 500px;
-    margin-bottom: 30px;
-  }
-  .contact .inner fieldset table {
-    width: 100%;
-    padding: 0;
-  }
-}
-@media screen and (max-width: 539px) {
-  .contact .sub_visual {
-    height: 250px;
-    padding: 0;
-  }
-  .contact .sub_visual h1 {
-    text-align: center;
-    line-height: 250px;
-  }
-  .contact .sub_visual h1::after {
-    width: 140px;
-    position: absolute;
-    top: 130px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .contact .inner {
-    padding: 100px 30px;
-  }
-  .contact .inner p {
-    font-size: 12px;
-    margin-bottom: 100px;
-  }
-  .contact .inner fieldset iframe {
-    height: 200px;
-  }
-  .contact .inner fieldset table tr td {
-    text-align: center;
-  }
-  .contact .inner fieldset table tr td h2 {
-    text-align: center;
-  }
-  .contact .inner fieldset table tr:nth-of-type(2) td input {
-    margin-right: 2%;
-  }
-  .contact .inner fieldset table tr:nth-of-type(4) th {
-    float: none;
   }
 }
 .about .sub_visual h1::after {
@@ -1435,6 +854,695 @@ footer p {
   }
   .about .inner .wrap:nth-of-type(5) > p {
     width: 100%;
+  }
+}
+.contact .sub_visual h1::after {
+  width: 230px;
+}
+.contact .inner h1 {
+  margin-bottom: 10px;
+}
+.contact .inner p {
+  text-align: center;
+  font: 14px/1 "Roboto";
+  color: #757575;
+  margin-bottom: 50px;
+}
+.contact .inner fieldset {
+  border: none;
+  width: 100%;
+  height: 600px;
+}
+.contact .inner fieldset fieldset::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.contact .inner fieldset .map {
+  float: left;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.contact .inner fieldset .map::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(238, 125, 49, 0.5);
+  top: 0;
+}
+.contact .inner fieldset .map iframe {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1);
+}
+.contact .inner fieldset table {
+  width: 50%;
+  height: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+}
+.contact .inner fieldset table tr td h2 {
+  margin-bottom: 10px;
+}
+.contact .inner fieldset table tr td h2 label {
+  font: 14px/1 "Roboto";
+  color: #555;
+}
+.contact .inner fieldset table tr td a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ee7d31;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.contact .inner fieldset table tr td a i {
+  color: #fff;
+  line-height: 30px;
+}
+.contact .inner fieldset table tr:nth-of-type(2) {
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.contact .inner fieldset table tr:nth-of-type(2) td {
+  display: block;
+}
+.contact .inner fieldset table tr:nth-of-type(2) td input {
+  width: 48%;
+  height: 40px;
+  margin-right: 3%;
+  border: none;
+  box-shadow: 2px 5px 15px #eee;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.contact .inner fieldset table tr:nth-of-type(2) td input:last-child {
+  margin-right: 0;
+}
+.contact .inner fieldset table tr:nth-of-type(2) td input::placeholder {
+  font: normal 12px/1 "Roboti";
+  color: #a7a7a7;
+}
+.contact .inner fieldset table tr:nth-of-type(3) textarea {
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: none;
+  box-shadow: 2px 5px 15px #eee;
+  margin-bottom: 30px;
+  resize: none;
+}
+.contact .inner fieldset table tr:nth-of-type(3) textarea::placeholder {
+  font: normal 12px/1 "Roboto";
+  color: #a7a7a7;
+}
+.contact .inner fieldset table tr:nth-of-type(4) th {
+  float: left;
+  position: relative;
+}
+.contact .inner fieldset table tr:nth-of-type(4) th input {
+  width: 200px;
+  height: 60px;
+  background: #ee7d31;
+  color: #fff;
+  border: none;
+}
+.contact .inner fieldset table tr:nth-of-type(4) th input:hover {
+  background-color: rgba(238, 125, 49, 0.4);
+  border: 1px solid #ee7d31;
+  color: #ee7d31;
+}
+.contact .inner fieldset table tr:nth-of-type(4) th i {
+  position: absolute;
+  color: #fff;
+  font-size: 12px;
+  top: 50%;
+  right: 68px;
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: 1179px) {
+  .contact .sub_visual {
+    height: 250px;
+    padding: 150px 50px 0;
+  }
+  .contact .sub_visual h1 {
+    font-size: 30px;
+  }
+  .contact .sub_visual h1::after {
+    width: 140px;
+    top: 25px;
+  }
+  .contact .inner {
+    width: 100%;
+    padding: 100px 20px;
+    box-sizing: border-box;
+  }
+  .contact .inner h1 {
+    font-size: 24px;
+  }
+  .contact .inner p {
+    margin-bottom: 100px;
+  }
+  .contact .inner fieldset {
+    width: 100%;
+    height: 100%;
+  }
+  .contact .inner fieldset .map {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 30px;
+  }
+  .contact .inner fieldset table {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 539px) {
+  .contact .sub_visual {
+    height: 250px;
+    padding: 0;
+  }
+  .contact .sub_visual h1 {
+    text-align: center;
+    line-height: 250px;
+  }
+  .contact .sub_visual h1::after {
+    width: 140px;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .contact .inner {
+    padding: 100px 30px;
+  }
+  .contact .inner p {
+    font-size: 12px;
+    margin-bottom: 100px;
+  }
+  .contact .inner fieldset iframe {
+    height: 200px;
+  }
+  .contact .inner fieldset table tr td {
+    text-align: center;
+  }
+  .contact .inner fieldset table tr td h2 {
+    text-align: center;
+  }
+  .contact .inner fieldset table tr:nth-of-type(2) td input {
+    margin-right: 2%;
+  }
+  .contact .inner fieldset table tr:nth-of-type(4) th {
+    float: none;
+  }
+}
+.portfolio .sub_visual h1::after {
+  width: 273px;
+}
+.portfolio .inner_sub {
+  width: 1180px;
+  margin: 0 auto;
+  padding: 150px 20px;
+}
+.portfolio .inner_sub ul {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.portfolio .inner_sub ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.portfolio .inner_sub ul li {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+.portfolio .inner_sub ul li a {
+  font: 12px/1 "Roboto";
+  color: #444;
+}
+.portfolio .inner_sub ul li.on::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 8px;
+  background: #ee7d31;
+  margin-top: 10px;
+}
+.portfolio .inner_sub .wrap {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.portfolio .inner_sub .wrap article {
+  box-sizing: border-box;
+  width: 380px;
+  height: 380px;
+  padding: 10px;
+  float: left;
+  position: relative;
+}
+.portfolio .inner_sub .wrap article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1);
+}
+.portfolio .inner_sub .wrap article .more {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-flow: column;
+  opacity: 0;
+}
+.portfolio .inner_sub .wrap article .more i {
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #fff;
+  color: #ee7d31;
+  line-height: 35px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.portfolio .inner_sub .wrap article .more i:last-child {
+  margin-bottom: 0;
+}
+.portfolio .inner_sub .wrap article:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  width: 180px;
+  height: 360px;
+  background: rgba(238, 125, 49, 0.5);
+}
+.portfolio .inner_sub .wrap article:hover .more {
+  opacity: 1;
+  z-index: 2;
+}
+.portfolio .inner_sub .btn {
+  display: block;
+  margin: 0 auto;
+  width: 230px;
+  height: 70px;
+  background: #ee7d31;
+  color: #fff;
+  text-align: center;
+  font: 500 14px/70px "Roboto";
+  box-shadow: -5px 5px 10px rgba(160, 160, 160, 0.3);
+  transition: all 0.5s;
+  border: 1px solid transparent;
+}
+.portfolio .inner_sub .btn:hover {
+  background-color: rgba(238, 125, 49, 0.4);
+  border: 1px solid #ee7d31;
+  color: #ee7d31;
+}
+
+.pricing .sub_visual h1::after {
+  width: 200px;
+}
+.pricing .inner {
+  width: 1180px;
+  margin: 0 auto;
+  padding: 150px 0;
+}
+.pricing .inner h1 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 150px;
+  color: #aaa;
+  text-align: center;
+}
+.pricing .inner table {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-spacing: 10px 0;
+  margin-bottom: 80px;
+}
+.pricing .inner table caption {
+  text-indent: -9999px;
+  opacity: 0;
+}
+.pricing .inner table th {
+  font: 700 20px/1 "Roboto";
+  color: #444;
+  padding: 15px;
+}
+.pricing .inner table th:nth-of-type(1) {
+  width: 15%;
+}
+.pricing .inner table th:nth-of-type(2) {
+  width: 25%;
+}
+.pricing .inner table th:nth-of-type(3) {
+  width: 25%;
+}
+.pricing .inner table th:nth-of-type(4) {
+  width: 25%;
+}
+.pricing .inner table tbody tr {
+  font: 300 16px/1 "Roboto";
+  color: #777;
+}
+.pricing .inner table tbody tr:nth-of-type(1) {
+  font: bold 30px/1 "Roboto";
+  color: #ee7d31;
+}
+.pricing .inner table tbody tr td {
+  padding: 25px;
+  border-right: 1px solid #dddddd;
+}
+.pricing .inner table tbody tr td:nth-of-type(1) {
+  font: bold 16px/1 "";
+}
+.pricing .inner table tbody tr td:nth-of-type(1) strong {
+  font: bold 30px/1 "Roboto";
+}
+.pricing .inner table tbody tr td:nth-of-type(4) {
+  border-right: 0;
+}
+.pricing .inner table tbody tr td strong {
+  font-weight: 500;
+  color: #ee7d31;
+}
+.pricing .inner a {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: 60px;
+  background-color: #ee7d31;
+  text-align: center;
+  font: 500 14px/60px "Roboto";
+  color: #fff;
+  box-shadow: -5px 5px 10px rgba(160, 160, 160, 0.3);
+  transition: all 0.5s;
+  border: 1px solid transparent;
+}
+.pricing .inner a:hover {
+  background-color: rgba(238, 125, 49, 0.4);
+  border: 1px solid #ee7d31;
+  color: #ee7d31;
+}
+
+footer {
+  width: 100%;
+  margin-bottom: 30px;
+}
+footer p {
+  font-size: 12px;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media screen and (max-width: 1179px) {
+  #header_sub .inner {
+    width: 100%;
+    height: 100px;
+  }
+  #header_sub .inner h1 {
+    width: 100%;
+    background-color: #ee7d31;
+    float: none;
+  }
+  #header_sub .inner h1 a i {
+    font-size: 70px;
+    line-height: 100px;
+    color: #fff;
+  }
+  #header_sub .inner .menuWeb {
+    display: none;
+  }
+  #header_sub .inner .btnCall {
+    display: block;
+  }
+
+  .pricing .sub_visual {
+    height: 250px;
+    padding: 150px 50px 0;
+  }
+  .pricing .sub_visual h1 {
+    font-size: 30px;
+  }
+  .pricing .sub_visual h1::after {
+    width: 125px;
+    top: 25px;
+  }
+  .pricing .inner {
+    width: 100%;
+    padding: 100px 20px;
+    box-sizing: border-box;
+  }
+  .pricing .inner h1 {
+    font-size: 24px;
+    margin-bottom: 100px;
+  }
+  .pricing .inner table {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border-spacing: 10px 0;
+    margin-bottom: 80px;
+    border: 1px solid;
+  }
+  .pricing .inner table caption {
+    text-indent: -9999px;
+    opacity: 0;
+  }
+  .pricing .inner table th {
+    font: 700 20px/1 "Roboto";
+    color: #444;
+    padding: 15px;
+  }
+  .pricing .inner table th:nth-of-type(1) {
+    width: 25%;
+  }
+  .pricing .inner table th:nth-of-type(2) {
+    width: 25%;
+  }
+  .pricing .inner table th:nth-of-type(3) {
+    width: 25%;
+  }
+  .pricing .inner table th:nth-of-type(4) {
+    width: 25%;
+  }
+  .pricing .inner table tbody tr {
+    font: 300 16px/1 "Roboto";
+    color: #777;
+  }
+  .pricing .inner table tbody tr:nth-of-type(1) {
+    font: bold 30px/1 "Roboto";
+    color: #ee7d31;
+  }
+  .pricing .inner table tbody tr td {
+    padding: 25px;
+    border-right: 1px solid #dddddd;
+  }
+  .pricing .inner table tbody tr td:nth-of-type(1) {
+    font: bold 16px/1 "";
+  }
+  .pricing .inner table tbody tr td:nth-of-type(1) strong {
+    font: bold 30px/1 "Roboto";
+  }
+  .pricing .inner table tbody tr td:nth-of-type(4) {
+    border-right: 0;
+  }
+  .pricing .inner table tbody tr td strong {
+    font-weight: 500;
+    color: #ee7d31;
+  }
+  .pricing .inner a {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 60px;
+    background-color: #ee7d31;
+    text-align: center;
+    font: 500 14px/60px "Roboto";
+    color: #fff;
+    box-shadow: -5px 5px 10px rgba(160, 160, 160, 0.3);
+    transition: all 0.5s;
+  }
+  .pricing .inner a:hover {
+    background-color: rgba(238, 125, 49, 0.4);
+    border: 1px solid #ee7d31;
+    color: #ee7d31;
+  }
+}
+@media screen and (max-width: 539px) {
+  .pricing .sub_visual {
+    height: 250px;
+    padding: 0;
+  }
+  .pricing .sub_visual h1 {
+    font-size: 30px;
+    text-align: center;
+    line-height: 250px;
+  }
+  .pricing .sub_visual h1::after {
+    width: 130px;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .pricing .inner {
+    padding: 100px 30px;
+  }
+}
+.community .sub_visual h1::after {
+  width: 300px;
+}
+.community .inner .btn {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.community .inner .btn > a {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  background: #ee7d31;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 20px;
+  font: 500 12px/40px "Roboto";
+  border: 1px solid transparent;
+}
+.community .inner .btn > a:hover {
+  background-color: rgba(238, 125, 49, 0.4);
+  border: 1px solid #ee7d31;
+  color: #ee7d31;
+}
+.community .inner table {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.community .inner table tr th {
+  padding: 15px;
+  color: #ee7d31;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  font: bold 14px/1 "Roboto";
+}
+.community .inner table tr th:nth-of-type(1) {
+  width: 8%;
+}
+.community .inner table tr th:nth-of-type(3) {
+  width: 15%;
+}
+.community .inner table tr th:nth-of-type(4) {
+  width: 15%;
+}
+.community .inner table tr td {
+  padding: 20px 5px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  font: 300 12px/1 "Roboto";
+}
+.community .inner table tr td:nth-of-type(2) {
+  text-align: left;
+}
+.community .inner table tr td a {
+  color: #333;
+  font-weight: 500;
+}
+.community .inner .pagenation {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+}
+.community .inner .pagenation::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.community .inner .pagenation .prev {
+  float: left;
+  display: block;
+  width: 30px;
+  height: 30px;
+  font: 20px/30px "Roboto";
+  color: #ee7d31;
+  text-align: center;
+}
+.community .inner .pagenation .next {
+  float: right;
+  display: block;
+  width: 30px;
+  height: 30px;
+  font: 20px/30px "Roboto";
+  color: #ee7d31;
+  text-align: center;
+}
+.community .inner .pagenation .numbers {
+  display: inline-block;
+  font-size: 0;
+}
+.community .inner .pagenation .numbers a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  font: bold 11px/30px "Roboto";
+  color: #666;
+  margin: 0 5px;
+  transition: 0.5s;
+}
+.community .inner .pagenation .numbers a:hover {
+  color: #ee7d31;
+}
+
+@media screen and (max-width: 1179px) {
+  .community .sub_visual {
+    height: 250px;
+    padding: 150px 50px 0;
+  }
+  .community .sub_visual h1 {
+    font-size: 30px;
+  }
+  .community .sub_visual h1::after {
+    width: 180px;
+    top: 25px;
+  }
+  .community .inner {
+    width: 100%;
+    padding: 100px 20px;
+    box-sizing: border-box;
+  }
+  .community .inner h1 {
+    font-size: 24px;
+    margin-bottom: 100px;
+  }
+  .community .inner .pagenation {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 539px) {
+  table tr th:nth-of-type(1) {
+    width: 8%;
+  }
+  table tr th:nth-of-type(3) {
+    width: 15%;
+  }
+  table tr th:nth-of-type(4) {
+    display: none;
+  }
+  table tr td:nth-of-type(4) {
+    display: none;
   }
 }
 #header {
