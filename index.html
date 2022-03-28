@@ -7,9 +7,12 @@
     <title>main</title>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="https://kit.fontawesome.com/c153cbd623.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/anime.js"></script>
     <script defer src="js/main.js"></script>
+    <script defer src="js/services.js"></script>
     
 </head>
 <body>
@@ -34,7 +37,6 @@
             
             <nav class="menuMo">
                 <ul id="gnbMo">
-                    <li><a href="index.html">HOME</a></li>
                     <li><a href="service.html">SERVICE</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
@@ -60,7 +62,13 @@
             <h1>Stay <br>With Techoners</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem et aliquid, magnam rerum provident placeat nesciunt quasi est!</p>
 
-            <a href="#">Learn More <i class="fas fa-arrow-right"></i></a>
+            <a class="btn" href="#">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="color">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
         </div>
 
         <div class="sns">
@@ -78,7 +86,7 @@
             <div class="wrap">
                 <article>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem officiis in totam consectetur explicabo tempora cumque exercitationem dolorum sequi, consequuntur dolor porro eaque nam sit.</p>
-                    <a href="service.html">All Services <i class="fas fa-arrow-right"></i></a>
+                    <a class="btn" href="service.html">All Services <i class="fas fa-arrow-right"></i></a>
                 </article>
 
                 <article>
@@ -104,7 +112,27 @@
             <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos odit aliquam nihil numquam temporibus quaerat.</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deleniti sint beatae fugit error quo!</p>
             
-            <a href="about.html">Learn More <i class="fas fa-arrow-right"></i></a>
+            <a class="btn" href="about.html">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <section id="satisfied">
+        <div class="inner">
+            <article>
+                <i class="fa-solid fa-desktop"></i>
+                <h1>1000+</h1>
+                <p>Website Developed</p>
+            </article>
+            <article>
+                <i class="fa-solid fa-briefcase"></i>
+                <h1>500+</h1>
+                <p>Brand Identity</p>
+            </article>
+            <article>
+                <i class="fa-solid fa-face-smile"></i>
+                <h1>1500+</h1>
+                <p>Satisfied Customers</p>
+            </article>
         </div>
     </section>
 
@@ -121,23 +149,72 @@
                     <a href="#"><i class="fa-solid fa-envelope"></i></a>
                 </li>
                 <li>
-                    <a href="#"><p>Terms of Service</p></a>
+                    <a href="service.html"><p>Terms of Service</p></a>
                     <a href="#"><p>Privacy Policy</p></a>
-                    <a href="#"><p>Site Map</p></a>
+                    <a href="contact.html"><p>Site Map</p></a>
                 </li>
                 <li>
                     <p>Techoners <br>House-194, Road-9, First Phase, <br> Khulna 9100</p>
 
-                    <a href="contact.html">Live Chat <i class="fas fa-arrow-right"></i></a>
+                    <a class="btn" href="contact.html">Live Chat <i class="fas fa-arrow-right"></i></a>
                 </li>
             </ul>
         </div>
     </section>
+ 
     <section id="portfolio">
         <div class="inner">
-            <div class="list">
-                <img src="" alt="">
-                
+            <div class="sub_tit">
+                <h1>PORTFOLIO</h1>
+                <p>It's our work. <br>Let me know if you like it.</p>
+                <a class="btn" href="portfolio.html">More <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/web01.jpg" alt="">
+                        <div class="more">
+                            <i class="fas fa-plus"></i>
+                            <i class="fa-regular fa-share-from-square"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/ui01.jpg" alt="">
+                        <div class="more">
+                            <i class="fas fa-plus"></i>
+                            <i class="fa-regular fa-share-from-square"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/brand01.jpg" alt="">
+                        <div class="more">
+                            <i class="fas fa-plus"></i>
+                            <i class="fa-regular fa-share-from-square"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/web02.jpg" alt="">
+                        <div class="more">
+                            <i class="fas fa-plus"></i>
+                            <i class="fa-regular fa-share-from-square"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/ui02.jpg" alt="">
+                        <div class="more">
+                            <i class="fas fa-plus"></i>
+                            <i class="fa-regular fa-share-from-square"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/brand02.jpg" alt="">
+                        <div class="more">
+                            <i class="fas fa-plus"></i>
+                            <i class="fa-regular fa-share-from-square"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -146,4 +223,5 @@
         <p>Copyright &copy 2022 Techoners - All rights reserved.</p>
     </footer>
 </body>
+
 </html>

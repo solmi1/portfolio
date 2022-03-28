@@ -2,33 +2,46 @@
     .sub_visual{
         h1{
             &::after{
-                width: 300px;
+                width: 340px;
             }
         }
     }
 
     .inner{
-        .btn{
+        .mv{
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 150px;
+
+            article{
+                padding: 10px;
+                box-sizing: border-box;
+
+                .pic{
+                    width: 100%;
+                    height: 100%;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        .btns{
             text-align: center;
             margin-bottom: 80px;
 
-            >a{
+            .btn{
                 display: inline-block;
                 width: 100px;
                 height: 40px;
-                background: #ee7d31;
-                color: #fff;
-                text-align: center;
                 line-height: 40px;
                 margin-right: 20px;
-                font: 500 12px/40px 'Roboto';
-                border: 1px solid transparent;
-
-                &:hover{
-                    background-color: rgba(238, 125, 49, 0.4);
-                    border: 1px solid #ee7d31;
-                    color: #ee7d31;
-                }
             }
         }  
 
@@ -115,6 +128,25 @@
                     }
                 }
             }
+        }
+    }
+
+    aside{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.9);
+        padding: 5vw;
+        box-sizing: border-box;
+    
+        .btnClose{
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            color: orange;
+            cursor: pointer;
         }
     }
 }
