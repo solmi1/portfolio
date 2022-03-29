@@ -1,3 +1,6 @@
+*{box-sizing: border-box;}
+
+
 .pricing{
     .sub_visual{
         h1{
@@ -12,6 +15,89 @@
         margin: 0 auto;
         padding: 150px 0;
 
+        #searchBox{
+            width: 100%;
+            padding: 50px 10px;
+            font-size: 0;
+            text-align: right;
+
+            #search{
+                width: 200px;
+                height: 30px;
+                border: 1px solid #000;
+                padding-left: 10px;
+                margin-right: 10px;
+            }
+
+            .btnSearch{
+                width: 80px;
+                height: 30px;
+                background: #000;
+                color: #fff;
+                text-align: center;
+                border: none;
+                cursor: pointer;
+            }
+        }
+
+        .box{
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+
+
+            &::after{
+                content: '';
+                display: block;
+                clear: both;
+            }
+            
+            .item{
+                width: calc(100%/5);
+                float: left;
+                padding: 10px;
+
+                >div{
+                    width: 100%;
+                    background: #eee;
+                    padding: 10px;
+
+                    .pic{
+                        display: block;
+                        width: 100%;
+
+                        img{
+                            width: 100%;
+                        }
+                    }
+
+                    p{
+                        color: #000;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
+
+                    .profile{
+                        display: flex;
+                        align-items: center;
+
+                        img{
+                            width: 25px;
+                            height: 25px;
+                            border-radius: 50%;
+                            margin-top: 10px;
+                        }
+
+                        span{
+                            font: 12px/1 'roboto';
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+
+        /*
         table{
             width: 100%;
             margin: 0 auto;
@@ -89,6 +175,7 @@
                 color: #ee7d31;
             }
         }
+        */
     }
     
 }
@@ -104,6 +191,43 @@ footer{
     }
 }
 
+
+aside{
+    width: 50%;
+    height: 50vh;
+    background: #fff;
+    border: 1px solid #000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+
+    .con{
+        width: 100%;
+        height: 100%;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .close{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        color: #000;
+    }
+}
+
+
+/*
 @media screen and (max-width:$tablet){
     #header_sub{
         .inner{
@@ -266,3 +390,4 @@ footer{
         }
     }
 }
+*/
