@@ -5,6 +5,7 @@ $mobile: 539px;
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
 @import 'reset.scss';
 @import 'subpage.scss';
@@ -680,6 +681,119 @@ $mobile: 539px;
                     }
                 }
             }
+        }
+    }
+}
+
+#popup{
+    width: 500px;
+    height: 500px;
+    background: #faf8f5;
+    padding: 0;
+    border: none;
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    &::after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: #ee7d31;
+        position: absolute;
+        bottom: 60px;
+
+    }
+
+    .content{
+        width: 100%;
+
+        span{
+            font: 600 14px/1 'Montserrat';
+            color: #ee7d31;
+            display: block;
+            text-align: center;
+            letter-spacing: 3px;
+            margin-top: 50px;
+        }
+
+        h1{
+            font: 65px/1 'Acme';
+            color: #ee7d31;
+            padding: 120px 0;
+        }
+
+        p{
+            font: 500 14px/1 'Montserrat';
+            color: #ee7d31;
+            letter-spacing: 3px;
+            padding: 15px 0;
+        }
+    }
+
+    .wrap{
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        input[type="checkbox"] {
+            -webkit-appearance: none;
+            position: relative;
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            border: 1px solid #ee7d31;
+            border-radius: 2px;
+            background: #fbfbfb;
+        }
+     
+        input[type="checkbox"]::before {
+            content: "\2713";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            overflow: hidden;
+            transform: scale(0) translate(-50%, -50%);
+            line-height: 1;
+        }
+     
+        input[type="checkbox"]:checked {
+            background-color: #ee7d31;
+            border-color: rgba(255, 255, 255, 0.3);
+            color: white;
+        }
+     
+        input[type="checkbox"]:checked::before {
+            border-radius: 2px;
+            transform: scale(1) translate(-50%, -50%)
+        }
+
+        label{
+            font: 14px/1 'Montserrat';
+            color: #fff;
+        }
+    }
+
+    .close{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #ee7d31;
+        position: absolute;
+        top: -45px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+
+        i{
+            color: #fff;
+            font-size: 20px;
+            line-height: 30px;
         }
     }
 }

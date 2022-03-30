@@ -1,5 +1,7 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -352,119 +354,74 @@ footer p {
 }
 .service .inner {
   width: 1180px;
-  height: 100vh;
   padding: 150px 0;
   margin: 0 auto;
-  position: relative;
-}
-.service .inner .btn {
-  display: block;
-  width: 100px;
-  height: 30px;
-  background-color: #ee7d31;
-  text-align: center;
-  font: 500 14px/30px "Roboto";
-  color: #fff;
-  box-shadow: -5px 5px 10px rgba(160, 160, 160, 0.3);
-  transition: all 0.5s;
-  border: 1px solid transparent;
-  cursor: pointer;
 }
 .service .inner .wrap {
   width: 100%;
   position: relative;
-  left: -150%;
-  top: 100px;
+}
+.service .inner .wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.service .inner .wrap:nth-of-type(2) {
+  margin-bottom: 150px;
+}
+.service .inner .wrap:nth-of-type(2) article {
+  float: left;
+}
+.service .inner .wrap:nth-of-type(2) article::after {
+  right: -150px;
+}
+.service .inner .wrap:nth-of-type(2) .img {
+  background: url(../img/pexels-essow-936722.jpg) no-repeat center/cover;
+  right: 0;
+}
+.service .inner .wrap:nth-of-type(3) article {
+  float: right;
+}
+.service .inner .wrap:nth-of-type(3) article::after {
+  left: -150px;
+}
+.service .inner .wrap:nth-of-type(3) .img {
+  background: url(../img/pexels-stephen-niemeier-176837.jpg) no-repeat center/cover;
 }
 .service .inner .wrap article {
   width: 70%;
   padding: 80px;
-  box-sizing: border-box;
   box-shadow: -5px 5px 10px rgba(160, 160, 160, 0.3);
   position: relative;
 }
 .service .inner .wrap article::after {
   content: "";
   display: block;
-  clear: both;
   width: 150px;
   height: 100%;
   background-color: rgba(238, 125, 49, 0.5);
   position: absolute;
   top: 0;
-  right: -150px;
 }
-.service .inner .wrap article h1 {
-  font-weight: 900;
-  font-size: 24px;
+.service .inner .wrap article h2 {
+  font-weight: 600;
+  font-size: 20px;
   margin-bottom: 15px;
-  color: #666;
   text-align: left;
 }
 .service .inner .wrap article p {
-  font-weight: 300;
-  font-size: 14px;
-  margin-bottom: 15px;
-  color: #aaa;
-  margin-bottom: 50px;
-}
-.service .inner .wrap article a {
-  display: block;
-  width: 250px;
-  height: 60px;
-  background-color: #ee7d31;
-  text-align: center;
-  font: 500 14px/60px "Roboto";
-  color: #fff;
-  box-shadow: -5px 5px 10px rgba(160, 160, 160, 0.3);
-  transition: all 0.5s;
-  border: 1px solid transparent;
-}
-.service .inner .wrap article a:hover {
-  background-color: rgba(238, 125, 49, 0.4);
-  border: 1px solid #ee7d31;
-  color: #ee7d31;
+  text-align: left;
+  margin-bottom: 30px;
 }
 .service .inner .wrap .img {
   display: block;
-  background: url(../img/pexels-stephen-niemeier-176837.jpg) no-repeat center/cover;
   width: 30%;
   height: 350px;
-  position: absolute;
-  z-index: -99;
-  top: 75px;
-  left: -100%;
   filter: grayscale(1);
-}
-.service .inner .wrap:nth-of-type(3) {
-  top: 250px;
-}
-.service .inner .wrap:nth-of-type(3) article::after {
-  left: -150px;
-}
-.service .inner .wrap:nth-of-type(3) .img {
-  background: url(../img/pexels-essow-936722.jpg) no-repeat center/cover;
-}
-.service .inner > a {
   position: absolute;
-  bottom: 100px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: block;
-  width: 250px;
-  height: 60px;
-  background-color: #ee7d31;
-  text-align: center;
-  font: 500 14px/60px "Roboto";
-  color: #fff;
-  box-shadow: -5px 5px 10px rgba(160, 160, 160, 0.3);
-  transition: all 0.5s;
-  border: 1px solid transparent;
-}
-.service .inner > a:hover {
-  background-color: rgba(238, 125, 49, 0.4);
-  border: 1px solid #ee7d31;
-  color: #ee7d31;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
 }
 
 @media screen and (max-width: 1179px) {
@@ -588,7 +545,7 @@ footer p {
 .about .inner .wrap:nth-of-type(2) .pic {
   float: left;
   width: 15%;
-  height: 500px;
+  height: 400px;
 }
 .about .inner .wrap:nth-of-type(2) .pic:nth-of-type(1) {
   background: url(../img/pexels-negative-space-34088.jpg) no-repeat center/cover;
@@ -600,20 +557,22 @@ footer p {
   content: "";
   display: block;
   width: 40px;
-  height: 500px;
+  height: 100%;
   background: rgba(238, 125, 49, 0.5);
   float: right;
 }
 .about .inner .wrap:nth-of-type(2) .txt {
   float: left;
   width: 35%;
-  height: 500px;
+  height: 400px;
   padding: 40px 30px;
   box-sizing: border-box;
   box-shadow: 2px 5px 15px #eee;
 }
 .about .inner .wrap:nth-of-type(2) .txt h2 {
   margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: 600;
 }
 .about .inner .wrap:nth-of-type(2) .txt p {
   text-align: left;
@@ -1128,12 +1087,12 @@ footer p {
   width: 100%;
 }
 .contact .inner .subscribe fieldset table tr:last-child th input {
-  width: 100%;
+  width: 80%;
   height: 60px;
   background: #ee7d31;
   color: #fff;
   border: none;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .contact .inner .subscribe fieldset table tr:last-child th input:hover {
   background-color: rgba(238, 125, 49, 0.4);
@@ -1199,6 +1158,7 @@ footer p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: 0.5s;
   display: flex;
   flex-flow: column;
   opacity: 0;
@@ -1216,6 +1176,9 @@ footer p {
 }
 .portfolio .inner_sub .wrap article .more i:last-child {
   margin-bottom: 0;
+}
+.portfolio .inner_sub .wrap article:hover {
+  transition: 0.5s;
 }
 .portfolio .inner_sub .wrap article:hover::after {
   content: "";
@@ -2360,6 +2323,104 @@ aside .close {
 #portfolio .inner .swiper .swiper-wrapper .swiper-slide:hover .more {
   opacity: 1;
   z-index: 2;
+}
+
+#popup {
+  width: 500px;
+  height: 500px;
+  background: #faf8f5;
+  padding: 0;
+  border: none;
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#popup::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #ee7d31;
+  position: absolute;
+  bottom: 60px;
+}
+#popup .content {
+  width: 100%;
+}
+#popup .content span {
+  font: 600 14px/1 "Montserrat";
+  color: #ee7d31;
+  display: block;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-top: 50px;
+}
+#popup .content h1 {
+  font: 65px/1 "Acme";
+  color: #ee7d31;
+  padding: 120px 0;
+}
+#popup .content p {
+  font: 500 14px/1 "Montserrat";
+  color: #ee7d31;
+  letter-spacing: 3px;
+  padding: 15px 0;
+}
+#popup .wrap {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#popup .wrap input[type=checkbox] {
+  -webkit-appearance: none;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  border: 1px solid #ee7d31;
+  border-radius: 2px;
+  background: #fbfbfb;
+}
+#popup .wrap input[type=checkbox]::before {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  transform: scale(0) translate(-50%, -50%);
+  line-height: 1;
+}
+#popup .wrap input[type=checkbox]:checked {
+  background-color: #ee7d31;
+  border-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+#popup .wrap input[type=checkbox]:checked::before {
+  border-radius: 2px;
+  transform: scale(1) translate(-50%, -50%);
+}
+#popup .wrap label {
+  font: 14px/1 "Montserrat";
+  color: #fff;
+}
+#popup .close {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ee7d31;
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+#popup .close i {
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 footer {

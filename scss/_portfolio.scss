@@ -68,6 +68,7 @@
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+                    transition: 0.5s;
                     display: flex;
                     flex-flow: column;
                     opacity: 0;
@@ -90,6 +91,8 @@
                 }
 
                 &:hover{
+                    transition: 0.5s;
+                   
                     &::after{
                         content: '';
                         display: block;
@@ -98,6 +101,7 @@
                         width: 180px;
                         height: 360px;
                         background: rgba(238, 125, 49, 0.5);
+                        
                     }
                     .more{
                         opacity: 1;
