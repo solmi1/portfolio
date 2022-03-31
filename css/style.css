@@ -599,7 +599,7 @@ footer p {
   padding: 40px;
   box-sizing: border-box;
   text-align: center;
-  box-shadow: 5px 5px 15px #f8f8f8;
+  box-shadow: 5px 5px 15px #eee;
 }
 .about .inner .wrap:nth-of-type(3) article:last-child {
   margin-right: 0;
@@ -624,7 +624,7 @@ footer p {
   padding: 80px 40px;
   box-sizing: border-box;
   text-align: center;
-  box-shadow: 5px 5px 15px #f8f8f8;
+  box-shadow: 5px 5px 15px #eee;
 }
 .about .inner .wrap:nth-of-type(4) article:last-child {
   margin-right: 0;
@@ -890,37 +890,41 @@ footer p {
 .contact .sub_visual h1::after {
   width: 250px;
 }
-.contact .inner .con fieldset {
-  border: none;
-  width: 100%;
-  height: 600px;
-}
-.contact .inner .con fieldset fieldset::after {
+.contact .inner .con::after {
   content: "";
   display: block;
   clear: both;
 }
-.contact .inner .con fieldset .map {
+.contact .inner .con #map {
   float: left;
   width: 50%;
-  height: 100%;
-  position: relative;
+  height: 600px;
 }
-.contact .inner .con fieldset .map iframe {
+.contact .inner .con form {
+  width: 50%;
+  height: 600px;
+  float: right;
+}
+.contact .inner .con form fieldset {
+  border: none;
   width: 100%;
   height: 100%;
-  filter: grayscale(1);
 }
-.contact .inner .con fieldset table {
-  width: 50%;
+.contact .inner .con form fieldset fieldset::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.contact .inner .con form fieldset table {
+  width: 100%;
   height: 100%;
   padding: 30px;
   box-sizing: border-box;
 }
-.contact .inner .con fieldset table tr td h2 {
+.contact .inner .con form fieldset table tr td h2 {
   margin-bottom: 15px;
 }
-.contact .inner .con fieldset table tr td a {
+.contact .inner .con form fieldset table tr td a {
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -930,42 +934,43 @@ footer p {
   margin-bottom: 30px;
   text-align: center;
 }
-.contact .inner .con fieldset table tr td a i {
+.contact .inner .con form fieldset table tr td a i {
   color: #fff;
   line-height: 30px;
+  font-size: 15px;
 }
-.contact .inner .con fieldset table tr:nth-of-type(2) {
+.contact .inner .con form fieldset table tr:nth-of-type(2) {
   display: inline-block;
   margin-bottom: 20px;
   width: 100%;
 }
-.contact .inner .con fieldset table tr:nth-of-type(2) td {
+.contact .inner .con form fieldset table tr:nth-of-type(2) td {
   display: block;
 }
-.contact .inner .con fieldset table tr:nth-of-type(2) td input {
+.contact .inner .con form fieldset table tr:nth-of-type(2) td input {
   width: 100%;
   margin-bottom: 20px;
 }
-.contact .inner .con fieldset table tr:nth-of-type(2) td input:last-child {
+.contact .inner .con form fieldset table tr:nth-of-type(2) td input:last-child {
   margin-bottom: 0;
 }
-.contact .inner .con fieldset table tr:nth-of-type(3) textarea {
+.contact .inner .con form fieldset table tr:nth-of-type(3) textarea {
   width: 100%;
   height: 200px;
   margin-bottom: 30px;
 }
-.contact .inner .con fieldset table tr:nth-of-type(4) th {
+.contact .inner .con form fieldset table tr:nth-of-type(4) th {
   float: left;
   width: 100%;
 }
-.contact .inner .con fieldset table tr:nth-of-type(4) th input {
+.contact .inner .con form fieldset table tr:nth-of-type(4) th input {
   width: 100%;
   height: 60px;
   background: #ee7d31;
   color: #fff;
   border: none;
 }
-.contact .inner .con fieldset table tr:nth-of-type(4) th input:hover {
+.contact .inner .con form fieldset table tr:nth-of-type(4) th input:hover {
   background-color: rgba(238, 125, 49, 0.4);
   border: 1px solid #ee7d31;
   color: #ee7d31;
@@ -2171,41 +2176,34 @@ aside .close {
   margin: 0 auto;
   position: relative;
 }
-#contact .inner h1 {
-  text-align: left;
-  position: relative;
-  margin-bottom: 50px;
-}
-#contact .inner h1::after {
-  content: "";
-  display: block;
-  width: 205px;
-  height: 5px;
-  background-color: rgba(238, 125, 49, 0.5);
-  position: absolute;
-  bottom: 2px;
-  z-index: -1;
-}
-#contact .inner ul::after {
+#contact .inner::after {
   content: "";
   display: block;
   clear: both;
 }
-#contact .inner ul li {
+#contact .inner article {
   float: left;
   width: 380px;
+  height: 280px;
   margin-right: 20px;
 }
-#contact .inner ul li:last-child {
-  margin-right: 0;
-}
-#contact .inner ul li p {
+#contact .inner article p {
   text-align: left;
-}
-#contact .inner ul li:nth-of-type(1) p {
   margin-bottom: 30px;
 }
-#contact .inner ul li:nth-of-type(1) a {
+#contact .inner article:nth-of-type(1) {
+  padding: 70px 0;
+}
+#contact .inner article:nth-of-type(1) p {
+  line-height: 1.5;
+}
+#contact .inner article:nth-of-type(2) {
+  padding: 70px 0;
+}
+#contact .inner article:nth-of-type(2) p {
+  margin-bottom: 20px;
+}
+#contact .inner article:nth-of-type(2) a {
   display: block;
   width: 25px;
   height: 25px;
@@ -2216,19 +2214,32 @@ aside .close {
   margin-right: 27px;
   float: left;
 }
-#contact .inner ul li:nth-of-type(1) a:last-child {
+#contact .inner article:nth-of-type(2) a:last-child {
   margin-right: 0;
 }
-#contact .inner ul li:nth-of-type(1) a i {
+#contact .inner article:nth-of-type(2) a i {
   color: #fff;
 }
-#contact .inner ul li:nth-of-type(2) a {
-  display: block;
-  margin-bottom: 30px;
+#contact .inner article:nth-of-type(3) {
+  margin-right: 0;
 }
-#contact .inner ul li:nth-of-type(3) p {
-  line-height: 1.5;
-  margin-bottom: 20px;
+#contact .inner article:nth-of-type(3) h1 {
+  text-align: left;
+  position: relative;
+  margin-bottom: 40px;
+}
+#contact .inner article:nth-of-type(3) h1::after {
+  content: "";
+  display: block;
+  width: 205px;
+  height: 5px;
+  background-color: rgba(238, 125, 49, 0.5);
+  position: absolute;
+  bottom: 2px;
+  z-index: -1;
+}
+#contact .inner article:nth-of-type(3) p {
+  margin-bottom: 30px;
 }
 
 #portfolio {
@@ -2331,7 +2342,7 @@ aside .close {
   background: #faf8f5;
   padding: 0;
   border: none;
-  display: block;
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;

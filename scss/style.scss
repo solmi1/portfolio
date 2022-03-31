@@ -500,48 +500,40 @@ $mobile: 539px;
         margin: 0 auto;
         position: relative;
 
-        h1{
-            text-align: left;
-            position: relative;
-            margin-bottom: 50px;
-
-            &::after{
-                content: '';
-                display: block;
-                width: 205px;
-                height: 5px;
-                background-color: rgba(238, 125, 49, 0.5);
-                position: absolute;
-                bottom: 2px;
-                z-index: -1;
-            }
+        &::after{
+            content: '';
+            display: block;
+            clear: both;
         }
 
-        ul{
-            &::after{
-                content: '';
-                display: block;
-                clear: both;
+        article{
+            float: left;
+            width: 380px;
+            height: 280px;
+            margin-right: 20px;
+
+            p{
+                text-align: left;
+                margin-bottom: 30px;
             }
 
-            li{
-                float: left;
-                width: 380px;
-                margin-right: 20px;
-
-                &:last-child{
-                    margin-right: 0;
-                }
+            &:nth-of-type(1) {
+                padding: 70px 0;
 
                 p{
-                    text-align: left;
+                    line-height: 1.5;
+                    
+                }
+            }
+
+            &:nth-of-type(2){
+            padding: 70px 0;
+
+                p{
+                    margin-bottom: 20px;
                 }
 
-                &:nth-of-type(1) p{
-                    margin-bottom: 30px;
-                }
-
-                &:nth-of-type(1) a{
+                a{
                     display: block;
                     width: 25px;
                     height: 25px;
@@ -559,16 +551,31 @@ $mobile: 539px;
                     i{
                         color: #fff;
                     }
-                }
+                } 
+            }
 
-                &:nth-of-type(2) a{
-                    display: block;
+            &:nth-of-type(3){
+                margin-right: 0;
+
+                h1{
+                    text-align: left;
+                    position: relative;
+                    margin-bottom: 40px;
+
+                    &::after{
+                        content: '';
+                        display: block;
+                        width: 205px;
+                        height: 5px;
+                        background-color: rgba(238, 125, 49, 0.5);
+                        position: absolute;
+                        bottom: 2px;
+                        z-index: -1;
+                    }
+                } 
+
+                p{
                     margin-bottom: 30px;
-                }
-
-                &:nth-of-type(3) p{
-                    line-height: 1.5;
-                    margin-bottom: 20px;
                 }
             }
         }
@@ -691,7 +698,7 @@ $mobile: 539px;
     background: #faf8f5;
     padding: 0;
     border: none;
-    display: block;
+    display: none;
     position: fixed;
     top: 50%;
     left: 50%;

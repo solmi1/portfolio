@@ -9,102 +9,108 @@
 
     .inner{
         .con{
-            fieldset{
-                border: none;
-                width: 100%;
+            &::after{
+                content: '';
+                display: block;
+                clear: both;
+            }
+
+            #map{
+                float: left;
+                width: 50%;
                 height: 600px;
-    
-                fieldset::after{
-                    content: '';
-                    display: block;
-                    clear: both;
-                }
-    
-                .map{
-                    float: left;
-                    width: 50%;
+            }
+
+            form{
+                width: 50%;
+                height: 600px;
+                float: right;
+
+                fieldset{
+                    border: none;
+                    width: 100%;
                     height: 100%;
-                    position: relative;
-    
-                    iframe{
+        
+                    fieldset::after{
+                        content: '';
+                        display: block;
+                        clear: both;
+                    }
+        
+                    table{
                         width: 100%;
                         height: 100%;
-                        filter: grayscale(1);
-                    }
-                }
-    
-                table{
-                    width: 50%;
-                    height: 100%;
-                    padding: 30px;
-                    box-sizing: border-box;
-    
-                    tr{
-                        td{
-                            h2{
-                                margin-bottom: 15px;
-                            }
+                        padding: 30px;
+                        box-sizing: border-box;
         
-                            a{
-                                display: inline-block;
-                                width: 30px;
-                                height: 30px;
-                                border-radius: 50%;
-                                background: #ee7d31;
-                                margin-right: 15px;
-                                margin-bottom: 30px;
-                                text-align: center;
-    
-                                i{
-                                    color: #fff;
-                                    line-height: 30px;
-                                }
-                            }
-                        }
-    
-                        &:nth-of-type(2){
-                            display: inline-block;
-                            margin-bottom: 20px;
-                            width: 100%;
-    
+                        tr{
                             td{
-                                display: block;
-    
-                                input{
-                                    width: 100%;
-                                    margin-bottom: 20px;
+                                h2{
+                                    margin-bottom: 15px;
+                                }
+            
+                                a{
+                                    display: inline-block;
+                                    width: 30px;
+                                    height: 30px;
+                                    border-radius: 50%;
+                                    background: #ee7d31;
+                                    margin-right: 15px;
+                                    margin-bottom: 30px;
+                                    text-align: center;
         
-                                    &:last-child{
-                                        margin-bottom: 0;
+                                    i{
+                                        color: #fff;
+                                        line-height: 30px;
+                                        font-size: 15px;
                                     }
                                 }
-                            } 
-                        }
-    
-                        &:nth-of-type(3){
-                            textarea{
-                                width: 100%;
-                                height: 200px;
-                                margin-bottom: 30px;
                             }
-                        }
-    
-                        &:nth-of-type(4){
-                            th{
-                                float: left;
+        
+                            &:nth-of-type(2){
+                                display: inline-block;
+                                margin-bottom: 20px;
                                 width: 100%;
-                                
-                                input{
+        
+                                td{
+                                    display: block;
+        
+                                    input{
+                                        width: 100%;
+                                        margin-bottom: 20px;
+            
+                                        &:last-child{
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                } 
+                            }
+        
+                            &:nth-of-type(3){
+                                textarea{
                                     width: 100%;
-                                    height: 60px;
-                                    background: #ee7d31;
-                                    color: #fff;
-                                    border: none;
-    
-                                    &:hover{
-                                        background-color: rgba(238, 125, 49, 0.4);
-                                        border: 1px solid #ee7d31;
-                                        color: #ee7d31;
+                                    height: 200px;
+                                    margin-bottom: 30px;
+                                }
+                            }
+        
+                            &:nth-of-type(4){
+                                th{
+                                    float: left;
+                                    width: 100%;
+                                    
+                                    input{
+                                        width: 100%;
+                                        height: 60px;
+                                        background: #ee7d31;
+                                        color: #fff;
+                                        border: none;
+        
+                                        &:hover{
+                                            background-color: rgba(238, 125, 49, 0.4);
+                                            border: 1px solid #ee7d31;
+                                            color: #ee7d31;
+                                        }
                                     }
                                 }
                             }
@@ -112,6 +118,7 @@
                     }
                 }
             }
+            
         }
         
         .quick{
