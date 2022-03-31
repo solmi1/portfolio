@@ -5,6 +5,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 ol, ul, li {
@@ -46,11 +47,9 @@ table input {
   border: none;
   box-shadow: 2px 2px 12px #eee;
   padding: 0 20px;
-  box-sizing: border-box;
 }
 table textarea {
   padding: 20px;
-  box-sizing: border-box;
   border: none;
   box-shadow: 2px 5px 15px #eee;
   resize: none;
@@ -76,7 +75,6 @@ table textarea {
   font: 500 12px/45px "Roboto";
   color: #fff;
   box-shadow: 5px 5px 10px rgba(75, 75, 75, 0.3);
-  box-sizing: border-box;
   transition: 0.5s;
 }
 .btn i {
@@ -379,6 +377,9 @@ footer p {
   background: url(../img/pexels-essow-936722.jpg) no-repeat center/cover;
   right: 0;
 }
+.service .inner .wrap:nth-of-type(3) {
+  margin-bottom: 150px;
+}
 .service .inner .wrap:nth-of-type(3) article {
   float: right;
 }
@@ -422,6 +423,77 @@ footer p {
   top: 50%;
   transform: translateY(-50%);
   z-index: -1;
+}
+.service .inner table {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-spacing: 10px 0;
+  margin-bottom: 80px;
+}
+.service .inner table caption {
+  text-indent: -9999px;
+  opacity: 0;
+}
+.service .inner table th {
+  font: 700 20px/1 "Roboto";
+  color: #444;
+  padding: 15px;
+}
+.service .inner table th:nth-of-type(1) {
+  width: 15%;
+}
+.service .inner table th:nth-of-type(2) {
+  width: 25%;
+}
+.service .inner table th:nth-of-type(3) {
+  width: 25%;
+}
+.service .inner table th:nth-of-type(4) {
+  width: 25%;
+}
+.service .inner table tbody tr {
+  font: 300 16px/1 "Roboto";
+  color: #777;
+}
+.service .inner table tbody tr:nth-of-type(1) {
+  font: bold 30px/1 "Roboto";
+  color: #ee7d31;
+}
+.service .inner table tbody tr td {
+  padding: 25px;
+  border-right: 1px solid #dddddd;
+}
+.service .inner table tbody tr td:nth-of-type(1) {
+  font: bold 16px/1 "";
+}
+.service .inner table tbody tr td:nth-of-type(1) strong {
+  font: bold 30px/1 "Roboto";
+}
+.service .inner table tbody tr td:nth-of-type(4) {
+  border-right: 0;
+}
+.service .inner table tbody tr td strong {
+  font-weight: 500;
+  color: #ee7d31;
+}
+.service .inner a {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: 60px;
+  background-color: #ee7d31;
+  text-align: center;
+  font: 500 14px/60px "Roboto";
+  color: #fff;
+  box-shadow: -5px 5px 10px rgba(160, 160, 160, 0.3);
+  transition: all 0.5s;
+  border: 1px solid transparent;
+}
+.service .inner a:hover {
+  background-color: rgba(238, 125, 49, 0.4);
+  border: 1px solid #ee7d31;
+  color: #ee7d31;
 }
 
 @media screen and (max-width: 1179px) {
@@ -895,10 +967,40 @@ footer p {
   display: block;
   clear: both;
 }
-.contact .inner .con #map {
+.contact .inner .con .wrap {
   float: left;
   width: 50%;
   height: 600px;
+}
+.contact .inner .con .wrap .branch {
+  width: 100%;
+  height: 70px;
+  text-align: center;
+}
+.contact .inner .con .wrap .branch li {
+  display: inline-block;
+  margin-right: 20px;
+  text-align: center;
+  width: calc(50% - 13px);
+  height: 40px;
+  border: 1px solid #ee7d31;
+}
+.contact .inner .con .wrap .branch li:last-child {
+  margin-right: 0;
+}
+.contact .inner .con .wrap .branch li a {
+  color: #ee7d31;
+  line-height: 40px;
+}
+.contact .inner .con .wrap .branch li.on {
+  background: #ee7d31;
+}
+.contact .inner .con .wrap .branch li.on a {
+  color: #fff;
+}
+.contact .inner .con .wrap #map {
+  width: 100%;
+  height: 500px;
 }
 .contact .inner .con form {
   width: 50%;
@@ -1217,371 +1319,127 @@ footer p {
   color: #ee7d31;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .pricing .sub_visual h1::after {
-  width: 200px;
+  width: 340px;
 }
 .pricing .inner {
   width: 1180px;
   margin: 0 auto;
   padding: 150px 0;
-  /*
-  table{
-      width: 100%;
-      margin: 0 auto;
-      text-align: center;
-      border-spacing: 10px 0;
-      margin-bottom: 80px;
-
-      caption{
-          text-indent: -9999px;
-          opacity: 0;
-      }
-
-      th{
-          font: 700 20px/1 'Roboto';
-          color: #444;
-          padding: 15px;
-
-          &:nth-of-type(1){ width: 15%; }
-          &:nth-of-type(2){ width: 25%; }
-          &:nth-of-type(3){ width: 25%; }
-          &:nth-of-type(4){ width: 25%; }
-      }
-
-      tbody{
-          tr{
-              font: 300 16px/1 'Roboto';
-              color: #777;
-
-              &:nth-of-type(1){
-                  font: bold 30px/1 'Roboto';
-                  color: #ee7d31;
-              }
-
-              td{
-                  padding: 25px;
-                  border-right: 1px solid rgb(221, 221, 221);
-
-                  &:nth-of-type(1){
-                      font: bold 16px/1 '';
-
-                      strong{
-                          font: bold 30px/1 'Roboto';
-                      }
-                  }
-
-                  &:nth-of-type(4){
-                      border-right: 0;
-                  }
-
-                  strong{
-                      font-weight: 500;
-                      color: #ee7d31;
-                  }
-              }
-          }
-      }
-  }
-
-  a{
-      display: block;
-      margin: 0 auto;
-      width: 250px;
-      height: 60px;
-      background-color: #ee7d31;
-      text-align: center;
-      font: 500 14px/60px 'Roboto';
-      color: #fff;
-      box-shadow: -5px 5px 10px rgba(160, 160, 160, 0.3);
-      transition: all 0.5s;
-      border: 1px solid transparent;
-
-      &:hover{
-          background-color: rgba(238, 125, 49, 0.4);
-          border: 1px solid #ee7d31;
-          color: #ee7d31;
-      }
-  }
-  */
 }
-.pricing .inner #searchBox {
-  width: 100%;
-  padding: 50px 10px;
-  font-size: 0;
-  text-align: right;
-}
-.pricing .inner #searchBox #search {
-  width: 200px;
-  height: 30px;
-  border: 1px solid #000;
-  padding-left: 10px;
-  margin-right: 10px;
-}
-.pricing .inner #searchBox .btnSearch {
-  width: 80px;
-  height: 30px;
-  background: #000;
-  color: #fff;
-  text-align: center;
-  border: none;
-  cursor: pointer;
-}
-.pricing .inner .box {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-.pricing .inner .box::after {
+.pricing .inner::after {
   content: "";
   display: block;
   clear: both;
 }
-.pricing .inner .box .item {
-  width: 20%;
+.pricing .inner .left {
   float: left;
-  padding: 10px;
+  width: 70%;
 }
-.pricing .inner .box .item > div {
+.pricing .inner .left article {
+  margin-bottom: 80px;
+  box-shadow: 2px 5px 15px #eee;
+}
+.pricing .inner .left article .img_box {
   width: 100%;
-  background: #eee;
-  padding: 10px;
+  height: 500px;
+  position: relative;
 }
-.pricing .inner .box .item > div .pic {
-  display: block;
-  width: 100%;
-}
-.pricing .inner .box .item > div .pic img {
-  width: 100%;
-}
-.pricing .inner .box .item > div p {
-  color: #000;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.pricing .inner .box .item > div .profile {
-  display: flex;
-  align-items: center;
-}
-.pricing .inner .box .item > div .profile img {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  margin-top: 10px;
-}
-.pricing .inner .box .item > div .profile span {
-  font: 12px/1 "roboto";
-  color: #000;
-}
-
-footer {
-  width: 100%;
-  margin-bottom: 30px;
-}
-footer p {
-  font-size: 12px;
-  font-weight: 300;
-  text-align: center;
-}
-
-aside {
-  width: 50%;
-  height: 50vh;
-  background: #fff;
-  border: 1px solid #000;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 5vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 5;
-}
-aside .con {
+.pricing .inner .left article .img_box img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  filter: grayscale(1);
 }
-aside .con img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-aside .close {
+.pricing .inner .left article .img_box .sns {
   position: absolute;
-  top: 40px;
-  right: 40px;
-  color: #000;
+  width: 100%;
+  height: 50px;
+  padding: 0 50px;
+  background: rgba(238, 125, 49, 0.5);
+  bottom: 0;
+}
+.pricing .inner .left article .img_box .sns a {
+  color: #fff;
+  margin-right: 20px;
+}
+.pricing .inner .left article .img_box .sns a i {
+  font-size: 18px;
+  line-height: 50px;
+}
+.pricing .inner .left article table {
+  width: 100%;
+  padding: 40px 30px;
+}
+.pricing .inner .left article table tr td {
+  font: 12px/1.8 "Montserrat";
+  color: #666;
+  padding: 10px 25px;
+}
+.pricing .inner .left article table tr:nth-of-type(1) td {
+  padding: 0;
+  text-align: center;
+  font: 11px/1.8 "Montserrat";
+}
+.pricing .inner .left article table tr:nth-of-type(1) td strong {
+  font: 600 24px/1 "Montserrat";
+  letter-spacing: 2px;
+}
+.pricing .inner .left article table tr:nth-of-type(1) td:last-child {
+  font: 500 18px/1 "Montserrat";
+  text-align: left;
+  padding: 10px 25px;
+}
+.pricing .inner .left article table tr:last-child td {
+  font-size: 14px;
+}
+.pricing .inner .left article table tr:last-child td:nth-of-type(1) {
+  width: 30%;
+}
+.pricing .inner .left article table tr:last-child td:nth-of-type(2) {
+  width: 30%;
+}
+.pricing .inner .left article table tr:last-child td:nth-of-type(3) {
+  width: 30%;
+}
+.pricing .inner .left article table tr:last-child td a {
+  color: #666;
+}
+.pricing .inner .right {
+  float: right;
+  width: 30%;
+  padding-left: 30px;
+}
+.pricing .inner .right #searchBox {
+  width: 100%;
+  font-size: 0;
+  position: relative;
+}
+.pricing .inner .right #searchBox #search {
+  width: 100%;
+  height: 40px;
+  border: none;
+  padding-left: 10px;
+  margin-right: 10px;
+  box-shadow: 2px 5px 15px #eee;
+}
+.pricing .inner .right #searchBox .btnSearch {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: none;
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+}
+.pricing .inner .right #searchBox .btnSearch i {
+  font-size: 20px;
+  line-height: 40px;
+  color: #ee7d31;
 }
 
-/*
-@media screen and (max-width:$tablet){
-    #header_sub{
-        .inner{
-            width: 100%;
-            height: 100px;
-
-            h1{
-                width: 100%;
-                background-color: #ee7d31;
-                float: none;
-
-                a{
-                    i{
-                        font-size: 70px;
-                        line-height: 100px;
-                        color: #fff;
-                    }
-                }
-            }
-
-            .menuWeb{
-                display: none;
-            }
-
-            .btnCall{
-                display: block;
-            }
-        }
-    }
-
-    .pricing{
-        .sub_visual{
-            height: 250px;
-            padding: 150px 50px 0;
-
-            h1{
-                font-size: 30px;
-
-                &::after{
-                    width: 125px;
-                    top: 25px;
-                }
-            }
-        }
-
-        .inner{
-            width: 100%;
-            padding: 100px 20px;
-            box-sizing: border-box;
-
-            h1{
-                font-size: 24px;
-                margin-bottom: 100px;
-            } 
-
-            table{
-                width: 100%;
-                margin: 0 auto;
-                text-align: center;
-                border-spacing: 10px 0;
-                margin-bottom: 80px;
-                border: 1px solid;
-
-                caption{
-                    text-indent: -9999px;
-                    opacity: 0;
-                }
-
-                th{
-                    font: 700 20px/1 'Roboto';
-                    color: #444;
-                    padding: 15px;
-
-                    &:nth-of-type(1){ width: 25%; }
-                    &:nth-of-type(2){ width: 25%; }
-                    &:nth-of-type(3){ width: 25%; }
-                    &:nth-of-type(4){ width: 25%; }
-                }
-
-                tbody{
-                    tr{
-                        font: 300 16px/1 'Roboto';
-                        color: #777;
-
-                        &:nth-of-type(1){
-                            font: bold 30px/1 'Roboto';
-                            color: #ee7d31;
-                        }
-
-                        td{
-                            padding: 25px;
-                            border-right: 1px solid rgb(221, 221, 221);
-
-                            &:nth-of-type(1){
-                                font: bold 16px/1 '';
-
-                                strong{
-                                    font: bold 30px/1 'Roboto';
-                                }
-                            }
-
-                            &:nth-of-type(4){
-                                border-right: 0;
-                            }
-
-                            strong{
-                                font-weight: 500;
-                                color: #ee7d31;
-                            }
-                        }
-                    }
-                }
-            }
-
-            a{
-                display: block;
-                margin: 0 auto;
-                width: 250px;
-                height: 60px;
-                background-color: #ee7d31;
-                text-align: center;
-                font: 500 14px/60px 'Roboto';
-                color: #fff;
-                box-shadow: -5px 5px 10px rgba(160, 160, 160, 0.3);
-                transition: all 0.5s;
-
-                &:hover{
-                    background-color: rgba(238, 125, 49, 0.4);
-                    border: 1px solid #ee7d31;
-                    color: #ee7d31;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width:$mobile){
-    .pricing{
-        .sub_visual{
-            height: 250px;
-            padding: 0; 
-
-            h1{
-                font-size: 30px;
-                text-align: center;
-                line-height: 250px;
-
-                &::after{
-                    width: 130px;
-                    position: absolute;
-                    top: 130px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                }
-            }
-        }
-
-        .inner{
-            padding: 100px 30px;
-        }
-    }
-}
-*/
 .community .sub_visual h1::after {
   width: 340px;
 }

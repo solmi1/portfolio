@@ -1,4 +1,4 @@
-*{margin: 0; padding: 0;}
+*{margin: 0; padding: 0; box-sizing: border-box;}
 ol,ul,li{list-style: none;}
 a{text-decoration: none;}
 
@@ -35,12 +35,10 @@ table{
         border: none;
         box-shadow: 2px 2px 12px #eee;
         padding: 0 20px;
-        box-sizing: border-box;
     }
 
     textarea{
         padding: 20px;
-        box-sizing: border-box;
         border: none;
         box-shadow: 2px 5px 15px #eee;
         resize: none;
@@ -69,7 +67,6 @@ table{
     font: 500 12px/45px 'Roboto';
     color: #fff;
     box-shadow: 5px 5px 10px rgba(75, 75, 75, 0.3);
-    box-sizing: border-box;
     transition: 0.5s;
 
     i{
