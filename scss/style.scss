@@ -703,6 +703,7 @@ $mobile: 539px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 5;
 
 
     &::after{
@@ -782,7 +783,7 @@ $mobile: 539px;
 
         label{
             font: 14px/1 'Montserrat';
-            color: #fff;
+            color: #ebbe95;
         }
     }
 

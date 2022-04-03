@@ -2,7 +2,7 @@ const body = document.querySelector(".community .inner");
 const main = document.querySelector(".mv");
 const key = "AIzaSyBVwYJUnAqD52l07QdQxyBTARq6SOpwgmA";
 const palyListId = "PLP1K1O_EnQH8JMRalZtLZYTS2yFF-pC_f";
-const num = 2;
+const num = 4;
 const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${palyListId}&maxResults=${num}`;
 
 fetch(url)
@@ -58,7 +58,7 @@ function creatPop(e){
     let pop = document.createElement("aside");
     pop.innerHTML = `
         <iframe src="https://www.youtube.com/embed/${vidId}" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
-        <span class="btnClose">close</span>
+        <span class="btnClose"><i class="fa-solid fa-xmark"></i></span>
     `;
     body.append(pop);
 }
@@ -67,6 +67,6 @@ function removePop(e){
     const pop = document.querySelector("aside");
     if(pop == null) return;
 
-    const close = pop.querySelector("span");
+    const close = pop.querySelector("span i");
     if(e.target == close) e.target.closest("aside").remove();
 }

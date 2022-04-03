@@ -1002,6 +1002,9 @@ footer p {
   width: 100%;
   height: 500px;
 }
+.contact .inner .con .wrap #map > div > div > div:nth-of-type(1), .contact .inner .con .wrap #map > div > div > div:nth-of-type(2) {
+  filter: grayscale(1);
+}
 .contact .inner .con form {
   width: 50%;
   height: 600px;
@@ -1239,7 +1242,7 @@ footer p {
   display: block;
   width: 100%;
   height: 8px;
-  background: #ee7d31;
+  background: rgba(238, 125, 49, 0.6);
   margin-top: 10px;
 }
 .portfolio .inner_sub .wrap {
@@ -1319,39 +1322,50 @@ footer p {
   color: #ee7d31;
 }
 
-.pricing .sub_visual h1::after {
+.community .sub_visual h1::after {
   width: 340px;
 }
-.pricing .inner {
+.community .inner {
   width: 1180px;
   margin: 0 auto;
   padding: 150px 0;
 }
-.pricing .inner::after {
+.community .inner::after {
   content: "";
   display: block;
   clear: both;
 }
-.pricing .inner .left {
+.community .inner .top {
+  margin-bottom: 50px;
+}
+.community .inner .top::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.community .inner .top .left {
   float: left;
   width: 70%;
 }
-.pricing .inner .left article {
+.community .inner .top .left article {
   margin-bottom: 80px;
   box-shadow: 2px 5px 15px #eee;
 }
-.pricing .inner .left article .img_box {
+.community .inner .top .left article:last-child {
+  margin-bottom: 0;
+}
+.community .inner .top .left article .img_box {
   width: 100%;
   height: 500px;
   position: relative;
 }
-.pricing .inner .left article .img_box img {
+.community .inner .top .left article .img_box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   filter: grayscale(1);
 }
-.pricing .inner .left article .img_box .sns {
+.community .inner .top .left article .img_box .sns {
   position: absolute;
   width: 100%;
   height: 50px;
@@ -1359,63 +1373,70 @@ footer p {
   background: rgba(238, 125, 49, 0.5);
   bottom: 0;
 }
-.pricing .inner .left article .img_box .sns a {
+.community .inner .top .left article .img_box .sns a {
   color: #fff;
   margin-right: 20px;
 }
-.pricing .inner .left article .img_box .sns a i {
+.community .inner .top .left article .img_box .sns a i {
   font-size: 18px;
   line-height: 50px;
 }
-.pricing .inner .left article table {
+.community .inner .top .left article table {
   width: 100%;
   padding: 40px 30px;
 }
-.pricing .inner .left article table tr td {
+.community .inner .top .left article table tr td {
   font: 12px/1.8 "Montserrat";
   color: #666;
   padding: 10px 25px;
+  border: none;
+  text-align: left;
 }
-.pricing .inner .left article table tr:nth-of-type(1) td {
+.community .inner .top .left article table tr:nth-of-type(1) td {
   padding: 0;
   text-align: center;
   font: 11px/1.8 "Montserrat";
 }
-.pricing .inner .left article table tr:nth-of-type(1) td strong {
+.community .inner .top .left article table tr:nth-of-type(1) td strong {
   font: 600 24px/1 "Montserrat";
   letter-spacing: 2px;
 }
-.pricing .inner .left article table tr:nth-of-type(1) td:last-child {
+.community .inner .top .left article table tr:nth-of-type(1) td:last-child {
   font: 500 18px/1 "Montserrat";
   text-align: left;
   padding: 10px 25px;
 }
-.pricing .inner .left article table tr:last-child td {
+.community .inner .top .left article table tr:last-child td {
   font-size: 14px;
+  font-weight: 500;
 }
-.pricing .inner .left article table tr:last-child td:nth-of-type(1) {
+.community .inner .top .left article table tr:last-child td:nth-of-type(1) {
   width: 30%;
 }
-.pricing .inner .left article table tr:last-child td:nth-of-type(2) {
+.community .inner .top .left article table tr:last-child td:nth-of-type(2) {
   width: 30%;
 }
-.pricing .inner .left article table tr:last-child td:nth-of-type(3) {
+.community .inner .top .left article table tr:last-child td:nth-of-type(3) {
   width: 30%;
 }
-.pricing .inner .left article table tr:last-child td a {
+.community .inner .top .left article table tr:last-child td a {
   color: #666;
 }
-.pricing .inner .right {
+.community .inner .top .left article table tr:last-child td a:hover {
+  color: #ee7d31;
+}
+.community .inner .top .right {
   float: right;
   width: 30%;
   padding-left: 30px;
 }
-.pricing .inner .right #searchBox {
+.community .inner .top .right #searchBox {
   width: 100%;
   font-size: 0;
   position: relative;
+  margin-bottom: 30px;
 }
-.pricing .inner .right #searchBox #search {
+.community .inner .top .right #searchBox #search {
   width: 100%;
   height: 40px;
   border: none;
@@ -1423,7 +1444,7 @@ footer p {
   margin-right: 10px;
   box-shadow: 2px 5px 15px #eee;
 }
-.pricing .inner .right #searchBox .btnSearch {
+.community .inner .top .right #searchBox .btnSearch {
   width: 40px;
   height: 40px;
   border: none;
@@ -1434,122 +1455,144 @@ footer p {
   top: 0;
   right: 0;
 }
-.pricing .inner .right #searchBox .btnSearch i {
+.community .inner .top .right #searchBox .btnSearch i {
   font-size: 20px;
   line-height: 40px;
   color: #ee7d31;
 }
-
-.community .sub_visual h1::after {
-  width: 340px;
-}
-.community .inner .mv {
+.community .inner .top .right .sec {
   width: 100%;
-  height: 400px;
+  padding: 30px;
+  box-shadow: 2px 5px 15px #eee;
+  position: relative;
+  margin-bottom: 30px;
+}
+.community .inner .top .right .sec::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(238, 125, 49, 0.5);
+}
+.community .inner .top .right .sec h2 {
+  font-weight: 600;
+  padding: 20px 0;
+}
+.community .inner .top .right .cartegories ul {
+  padding: 0 30px;
+}
+.community .inner .top .right .cartegories ul li {
+  font: 400 10px/2 "Montserrat";
+  color: #ee7d31;
+  list-style-type: disc;
+}
+.community .inner .top .right .cartegories ul li a {
+  color: #757575;
+}
+.community .inner .top .right .post .box {
+  width: 100%;
+}
+.community .inner .top .right .post .box a {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 20px;
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 150px;
+  justify-content: flex-start;
+  position: relative;
 }
-.community .inner .mv article {
-  padding: 10px;
-  box-sizing: border-box;
-}
-.community .inner .mv article .pic {
-  width: 100%;
+.community .inner .top .right .post .box a::after {
+  content: "";
+  display: block;
+  width: 5%;
   height: 100%;
+  position: absolute;
+  top: 0;
+  left: -5%;
+  background: rgba(238, 125, 49, 0.5);
 }
-.community .inner .mv article .pic img {
+.community .inner .top .right .post .box a img {
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1);
+  margin-right: 15px;
+}
+.community .inner .top .right .post .box a .txt h3 {
+  font: 400 11px/2 "Montserrat";
+}
+.community .inner .top .right .post .box a .txt span {
+  font-size: 12px;
+  color: #757575;
+  margin-right: 20px;
+}
+.community .inner .top .right .post .box a .txt span i {
+  font-size: 12px;
+  color: #ee7d31;
+}
+.community .inner .top .right .notice ul {
+  padding: 0 30px;
+}
+.community .inner .top .right .notice ul li {
+  font: 400 10px/2 "Montserrat";
+  color: #ee7d31;
+  list-style-type: disc;
+}
+.community .inner .top .right .notice ul li a {
+  color: #757575;
+}
+.community .inner .top .right .insta {
+  padding: 40px 30px 70px 30px;
+  margin-bottom: 0;
+}
+.community .inner .top .right .insta .img_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.community .inner .top .right .insta .img_box a {
+  width: 80px;
+  height: 80px;
+  margin: 4px;
+  overflow: hidden;
+}
+.community .inner .top .right .insta .img_box a img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-.community .inner .btns {
-  text-align: center;
-  margin-bottom: 80px;
-}
-.community .inner .btns .btn {
-  display: inline-block;
-  width: 100px;
-  height: 40px;
-  line-height: 40px;
-  margin-right: 20px;
-}
-.community .inner table {
-  width: 100%;
-  margin-bottom: 50px;
-}
-.community .inner table tr th {
-  padding: 15px;
-  color: #ee7d31;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  font: bold 14px/1 "Roboto";
-}
-.community .inner table tr th:nth-of-type(1) {
-  width: 8%;
-}
-.community .inner table tr th:nth-of-type(3) {
-  width: 15%;
-}
-.community .inner table tr th:nth-of-type(4) {
-  width: 15%;
-}
-.community .inner table tr td {
-  padding: 20px 5px;
-  border-bottom: 1px solid #ddd;
-  text-align: center;
-  font: 300 12px/1 "Roboto";
-}
-.community .inner table tr td:nth-of-type(2) {
-  text-align: left;
-}
-.community .inner table tr td a {
-  color: #333;
-  font-weight: 500;
-}
-.community .inner .pagenation {
-  width: 30%;
-  margin: 0 auto;
-  text-align: center;
-}
-.community .inner .pagenation::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.community .inner .pagenation .prev {
-  float: left;
-  display: block;
-  width: 30px;
-  height: 30px;
-  font: 20px/30px "Roboto";
-  color: #ee7d31;
-  text-align: center;
-}
-.community .inner .pagenation .next {
-  float: right;
-  display: block;
-  width: 30px;
-  height: 30px;
-  font: 20px/30px "Roboto";
-  color: #ee7d31;
-  text-align: center;
-}
-.community .inner .pagenation .numbers {
-  display: inline-block;
-  font-size: 0;
-}
-.community .inner .pagenation .numbers a {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  font: bold 11px/30px "Roboto";
-  color: #666;
-  margin: 0 5px;
+  filter: grayscale(1);
   transition: 0.5s;
 }
-.community .inner .pagenation .numbers a:hover {
-  color: #ee7d31;
+.community .inner .top .right .insta .img_box a:hover img {
+  transform: scale(1.2);
+}
+.community .inner .mv_box {
+  width: 100%;
+}
+.community .inner .mv_box .mv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.community .inner .mv_box .mv article {
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+.community .inner .mv_box .mv article:last-child {
+  margin-right: 0;
+}
+.community .inner .mv_box .mv article .pic {
+  width: 100%;
+  height: 100%;
+}
+.community .inner .mv_box .mv article .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .community aside {
   width: 100%;
@@ -1567,6 +1610,98 @@ footer p {
   right: 40px;
   color: orange;
   cursor: pointer;
+}
+
+.board .sub_visual h1::after {
+  width: 200px;
+}
+.board .inner .btns {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.board .inner .btns .btn {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 20px;
+}
+.board .inner table {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.board .inner table tr th {
+  padding: 15px;
+  color: #ee7d31;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  font: bold 14px/1 "Roboto";
+}
+.board .inner table tr th:nth-of-type(1) {
+  width: 8%;
+}
+.board .inner table tr th:nth-of-type(3) {
+  width: 15%;
+}
+.board .inner table tr th:nth-of-type(4) {
+  width: 15%;
+}
+.board .inner table tr td {
+  padding: 20px 5px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  font: 300 12px/1 "Roboto";
+}
+.board .inner table tr td:nth-of-type(2) {
+  text-align: left;
+}
+.board .inner table tr td a {
+  color: #333;
+  font-weight: 500;
+}
+.board .inner .pagenation {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+}
+.board .inner .pagenation::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.board .inner .pagenation .prev {
+  float: left;
+  display: block;
+  width: 30px;
+  height: 30px;
+  font: 20px/30px "Roboto";
+  color: #ee7d31;
+  text-align: center;
+}
+.board .inner .pagenation .next {
+  float: right;
+  display: block;
+  width: 30px;
+  height: 30px;
+  font: 20px/30px "Roboto";
+  color: #ee7d31;
+  text-align: center;
+}
+.board .inner .pagenation .numbers {
+  display: inline-block;
+  font-size: 0;
+}
+.board .inner .pagenation .numbers a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  font: bold 11px/30px "Roboto";
+  color: #666;
+  margin: 0 5px;
+  transition: 0.5s;
+}
+.board .inner .pagenation .numbers a:hover {
+  color: #ee7d31;
 }
 
 @media screen and (max-width: 1179px) {
@@ -2205,6 +2340,7 @@ footer p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 5;
 }
 #popup::after {
   content: "";
@@ -2273,7 +2409,7 @@ footer p {
 }
 #popup .wrap label {
   font: 14px/1 "Montserrat";
-  color: #fff;
+  color: #ebbe95;
 }
 #popup .close {
   width: 30px;
