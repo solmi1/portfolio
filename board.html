@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/c153cbd623.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/anime.js"></script>
-    <script defer src="js/main.js"></script>
+    <script defer src="js/board.js"></script>
 
 </head>
 <body>
@@ -60,82 +60,160 @@
         <div class="inner">
 
             <div class="tit">
-                <h1>FAQ</h1>
+                <h1>FAQ's</h1>
             </div>
 
             <div class="btns">
-                <a class="btn" href="#">FAQ</a>
-                <a class="btn" href="#">QNA</a>
+                <a class="on" href="#">FAQ</a>
+                <a href="#">QNA</a>
+            </div>
+
+            <div id="searchBox">
+                <input type="text" id="search">
+                <button class="btnSearch"><i class="fas fa-search"></i></button>
             </div>
 
             <table>
                 <caption class="h">자유게시판</caption>
+                    <tr>
+                        <td>01</td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing?</td>
+                        <td>
+                            <i class="fa-solid fa-plus" id="plus"></i>
+                            <i class="fa-solid fa-minus minus" style="display: none;"></i>
+                        </td>
+                    </tr>
+                    <tr class="tb">
+                        <td></td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit. Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae perferendis explicabo quos distinctio.</td>
+                        <td></td>
+                    </tr>
 
-                <thead>
                     <tr>
-                        <th scope="col">NO</th>
-                        <th scope="col">SUBJECT</th>
-                        <th scope="col">NAME</th>
-                        <th scope="col">DATE</th>
+                        <td>02</td>
+                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, rem?</td>
+                        <td>
+                            <i class="fa-solid fa-plus plus"></i>
+                            <i class="fa-solid fa-minus" style="display: none;"></i>
+                        </td>
                     </tr>
-                </thead>
+                    <tr>
+                        <td></td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit. Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae perferendis explicabo quos distinctio.</td>
+                        <td></td>
+                    </tr>
 
-                <tbody>
                     <tr>
-                        <td>9</td>
-                        <td><a href="#">공지사항 숙지 후 문의 부탁드립니다.</a></td>
-                        <td>maybe</td>
-                        <td>2022-03-14</td>
+                        <td>03</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tempore amet quam at quasi animi?</td>
+                        <td>
+                            <i class="fa-solid fa-plus plus"></i>
+                            <i class="fa-solid fa-minus" style="display: none;"></i>
+                        </td>
                     </tr>
                     <tr>
-                        <td>8</td>
-                        <td><a href="#">실수로 디자인 소스를 삭제했어요 복구방법이 있나요?</a></td>
-                        <td>maybe</td>
-                        <td>2022-02-14</td>
+                        <td></td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit. Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae perferendis explicabo quos distinctio.</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>04</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo deleniti voluptatibus iure inventore?</td>
+                        <td>
+                            <i class="fa-solid fa-plus plus"></i>
+                            <i class="fa-solid fa-minus" style="display: none;"></i>
+                        </td>
                     </tr>
                     <tr>
-                        <td>7</td>
-                        <td><a href="#">주문서 내용 중 미정상태인 항목은 어떻게 하나요?</a></td>
-                        <td>maybe</td>
-                        <td>2022-01-01</td>
+                        <td></td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit. Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae perferendis explicabo quos distinctio.</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>05</td>
+                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa?</td>
+                        <td>
+                            <i class="fa-solid fa-plus plus"></i>
+                            <i class="fa-solid fa-minus" style="display: none;"></i>
+                        </td>
                     </tr>
                     <tr>
-                        <td>6</td>
-                        <td><a href="#">작업소요시간을 알고싶어요.</a></td>
-                        <td>maybe</td>
-                        <td>2021-11-30</td>
+                        <td></td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit. Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae perferendis explicabo quos distinctio.</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>06</td>
+                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa?</td>
+                        <td>
+                            <i class="fa-solid fa-plus plus"></i>
+                            <i class="fa-solid fa-minus" style="display: none;"></i>
+                        </td>
                     </tr>
                     <tr>
-                        <td>5</td>
-                        <td><a href="#">색상(컬러칩) 옵션 설정 방법</a></td>
-                        <td>maybe</td>
-                        <td>2020-07-04</td>
+                        <td></td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit. Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae perferendis explicabo quos distinctio.</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>07</td>
+                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa?</td>
+                        <td>
+                            <i class="fa-solid fa-plus plus"></i>
+                            <i class="fa-solid fa-minus" style="display: none;"></i>
+                        </td>
                     </tr>
                     <tr>
-                        <td>4</td>
-                        <td><a href="#">디자인의 백업 복구는 어떻게 하나요?</a></td>
-                        <td>maybe</td>
-                        <td>2019-04-15</td>
+                        <td></td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit. Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae perferendis explicabo quos distinctio.</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>08</td>
+                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa?</td>
+                        <td>
+                            <i class="fa-solid fa-plus plus"></i>
+                            <i class="fa-solid fa-minus" style="display: none;"></i>
+                        </td>
                     </tr>
                     <tr>
-                        <td>3</td>
-                        <td><a href="#">디자인세팅 및 수정작업완료후에 별도의 수정매뉴얼을 제공하고 있습니다.</a></td>
-                        <td>maybe</td>
-                        <td>2018-08-18</td>
+                        <td></td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit. Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae perferendis explicabo quos distinctio.</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>09</td>
+                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa?</td>
+                        <td>
+                            <i class="fa-solid fa-plus plus"></i>
+                            <i class="fa-solid fa-minus" style="display: none;"></i>
+                        </td>
                     </tr>
                     <tr>
-                        <td>2</td>
-                        <td><a href="#">사업자등록신고와 통신판매업신고를 안한 상태에서 디자인을 구매해도 되나요?</a></td>
-                        <td>maybe</td>
-                        <td>2017-03-09</td>
+                        <td></td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit. Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae perferendis explicabo quos distinctio.</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>10</td>
+                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa?</td>
+                        <td>
+                            <i class="fa-solid fa-plus plus"></i>
+                            <i class="fa-solid fa-minus" style="display: none;"></i>
+                        </td>
                     </tr>
                     <tr>
-                        <td>1</td>
-                        <td><a href="#">디자인 구매후 디자인변경 또는 구매취소가 가능합니까?</a></td>
-                        <td>maybe</td>
-                        <td>2016-03-09</td>
+                        <td></td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit. Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae perferendis explicabo quos distinctio.</td>
+                        <td></td>
                     </tr>
-                </tbody>
             </table>
 
             <div class="pagenation">
@@ -144,7 +222,7 @@
                 </a>
 
                 <p class="numbers">
-                    <a href="#">1</a>
+                    <a href="#" class="on">1</a>
                     <a href="#">2</a>
                     <a href="#">3</a>
                     <a href="#">4</a>

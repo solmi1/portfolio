@@ -11,46 +11,86 @@
 
         .btns{
             text-align: center;
-            margin-bottom: 80px;
+            margin-bottom: 40px;
+            float: left;
 
-            .btn{
+            a{
                 display: inline-block;
                 width: 100px;
                 height: 40px;
-                line-height: 40px;
+                text-align: center;
+                font: 500 12px/40px 'Roboto';
+                color: #ee7d31;
+                border: 1px solid #ee7d31;
+                box-shadow: 2px 5px 15px #eee;
                 margin-right: 20px;
+
+                &.on{
+                    background: #ee7d31;
+                    color: #fff;
+                }
             }
         }  
+
+        #searchBox{
+            float: right;
+            width: 250px;
+            font-size: 0;
+            position: relative;
+            margin-bottom: 30px;
+
+            #search{
+                width: 100%;
+                height: 40px;
+                border: none;
+                padding-left: 10px;
+                margin-right: 10px;
+                box-shadow: 2px 5px 15px #eee;
+            }
+
+            .btnSearch{
+                width: 40px;
+                height: 40px;
+                border: none;
+                background: none;
+                position: absolute;
+                text-align: center;
+                cursor: pointer;
+                top: 0;
+                right: 0;
+
+                i{
+                    font-size: 20px;
+                    line-height: 40px;
+                    color: #ee7d31;
+                }
+            }
+        }
 
         table{
             width: 100%;
             margin-bottom: 50px;
 
             tr{
-                th{
-                    padding: 15px;
-                    color: #ee7d31;
-                    border-top: 1px solid #ddd;
-                    border-bottom: 1px solid #ddd;
-                    font: bold 14px/1 'Roboto';
-
-                    &:nth-of-type(1){width: 8%;}
-                    &:nth-of-type(3){width: 15%;}
-                    &:nth-of-type(4){width: 15%;}
-                }
-
+                &:nth-of-type(2n){ display: none; }
+                
                 td{
-                    padding: 20px 5px;
+                    padding: 30px 5px;
                     border-bottom: 1px solid #ddd;
-                    text-align: center;
-                    font: 300 12px/1 'Roboto';
+                    font: 400 12px/1.5 'Montserrat';
+                    color: #666;
 
+                    &:nth-of-type(1){
+                        text-align: center;
+                        font: 40px/1px 'Montserrat';
+                        color: rgba(238, 125, 49, 0.8);
+                        width: 10%;
+                    }
 
-                    &:nth-of-type(2){text-align: left;}
-
-                    a{
-                        color: #333;
-                        font-weight: 500;
+                    i{
+                        color: #ee7d31;
+                        font-size: 15px;
+                        cursor: pointer;
                     }
                 }
             }
@@ -95,13 +135,14 @@
                     display: inline-block;
                     width: 30px;
                     height: 30px;
-                    font: bold 11px/30px 'Roboto';
+                    font: 11px/30px 'Montserrat';
                     color: #666;
                     margin: 0 5px;
                     transition: 0.5s;
 
-                    &:hover{
+                    &.on{
                         color: #ee7d31;
+                        font-weight: 700;
                     }
                 }
             }

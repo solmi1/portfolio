@@ -70,11 +70,11 @@ table textarea {
   display: block;
   width: 170px;
   height: 45px;
-  background-color: #ee7d31;
+  background: #ee7d31;
   text-align: center;
   font: 500 12px/45px "Roboto";
   color: #fff;
-  box-shadow: 5px 5px 10px rgba(75, 75, 75, 0.3);
+  box-shadow: 2px 5px 15px #eee;
   transition: 0.5s;
 }
 .btn i {
@@ -414,6 +414,9 @@ footer p {
   text-align: left;
   margin-bottom: 30px;
 }
+.service .inner .wrap article .btn {
+  margin: 0;
+}
 .service .inner .wrap .img {
   display: block;
   width: 30%;
@@ -424,60 +427,80 @@ footer p {
   transform: translateY(-50%);
   z-index: -1;
 }
-.service .inner table {
+.service .inner #plan {
   width: 100%;
   margin: 0 auto;
   text-align: center;
   border-spacing: 10px 0;
   margin-bottom: 80px;
 }
-.service .inner table caption {
-  text-indent: -9999px;
-  opacity: 0;
+.service .inner #plan::after {
+  content: "";
+  display: block;
+  clear: both;
 }
-.service .inner table th {
-  font: 700 20px/1 "Roboto";
-  color: #444;
-  padding: 15px;
+.service .inner #plan h1 {
+  margin-bottom: 50px;
 }
-.service .inner table th:nth-of-type(1) {
-  width: 15%;
+.service .inner #plan .btns {
+  width: 20%;
+  float: left;
+  margin-right: 30px;
+  margin-top: 85px;
 }
-.service .inner table th:nth-of-type(2) {
-  width: 25%;
+.service .inner #plan .btns li {
+  width: 100%;
+  height: 70px;
 }
-.service .inner table th:nth-of-type(3) {
-  width: 25%;
+.service .inner #plan .btns li p {
+  font: bold 30px/70px "Roboto";
+  color: #ee7d31;
 }
-.service .inner table th:nth-of-type(4) {
-  width: 25%;
-}
-.service .inner table tbody tr {
-  font: 300 16px/1 "Roboto";
+.service .inner #plan .btns li a {
+  display: block;
+  width: 100%;
+  font: 500 16px/70px "Montserrat";
   color: #777;
 }
-.service .inner table tbody tr:nth-of-type(1) {
-  font: bold 30px/1 "Roboto";
+.service .inner #plan .btns li a.on {
+  background: #ee7d31;
+  color: #fff;
+}
+.service .inner #plan div {
+  width: calc(80% - 30px);
+  display: none;
+  float: left;
+}
+.service .inner #plan div.on {
+  display: flex;
+  justify-content: space-between;
+}
+.service .inner #plan div ul {
+  padding: 15px;
+  width: 100%;
+  box-shadow: 2px 5px 15px #eee;
+  margin-right: 30px;
+}
+.service .inner #plan div ul:last-child {
+  margin-right: 0;
+}
+.service .inner #plan div ul li {
+  height: 70px;
+  font: 500 14px/70px "Montserrat";
+  color: #aaa;
+}
+.service .inner #plan div ul li h2 {
+  font: bold 16px/70px "Roboto";
+}
+.service .inner #plan div ul li p {
+  font: bold 30px/70px "Roboto";
   color: #ee7d31;
 }
-.service .inner table tbody tr td {
-  padding: 25px;
-  border-right: 1px solid #dddddd;
-}
-.service .inner table tbody tr td:nth-of-type(1) {
-  font: bold 16px/1 "";
-}
-.service .inner table tbody tr td:nth-of-type(1) strong {
-  font: bold 30px/1 "Roboto";
-}
-.service .inner table tbody tr td:nth-of-type(4) {
-  border-right: 0;
-}
-.service .inner table tbody tr td strong {
-  font-weight: 500;
+.service .inner #plan div ul li strong {
+  font-weight: 600;
   color: #ee7d31;
 }
-.service .inner a {
+.service .inner .btn {
   display: block;
   margin: 0 auto;
   width: 250px;
@@ -490,118 +513,12 @@ footer p {
   transition: all 0.5s;
   border: 1px solid transparent;
 }
-.service .inner a:hover {
+.service .inner .btn:hover {
   background-color: rgba(238, 125, 49, 0.4);
   border: 1px solid #ee7d31;
   color: #ee7d31;
 }
 
-@media screen and (max-width: 1179px) {
-  #header_sub .inner {
-    width: 100%;
-    height: 100px;
-  }
-  #header_sub .inner h1 {
-    width: 100%;
-    background-color: #ee7d31;
-    float: none;
-  }
-  #header_sub .inner h1 a i {
-    font-size: 70px;
-    line-height: 100px;
-    color: #fff;
-  }
-  #header_sub .inner .menuWeb {
-    display: none;
-  }
-  #header_sub .inner .btnCall {
-    display: block;
-  }
-
-  .service .sub_visual {
-    height: 250px;
-    padding: 150px 50px 0;
-  }
-  .service .sub_visual h1 {
-    font-size: 30px;
-  }
-  .service .sub_visual h1::after {
-    width: 190px;
-    top: 25px;
-  }
-  .service .inner {
-    width: 100%;
-    padding: 100px 20px;
-    box-sizing: border-box;
-  }
-  .service .inner h1 {
-    font-size: 24px;
-    margin-bottom: 100px;
-  }
-  .service .inner .wrap article::after {
-    width: 100px;
-    height: 100%;
-    right: -100px;
-  }
-  .service .inner .wrap article h1 {
-    font-size: 24px;
-  }
-  .service .inner .wrap article a {
-    width: 200px;
-  }
-  .service .inner .wrap .img {
-    height: 380px;
-    top: 8%;
-  }
-  .service .inner .wrap:nth-of-type(2) article::after {
-    left: -100px;
-  }
-  .service .inner .wrap:nth-of-type(2) .img {
-    top: 15%;
-  }
-}
-@media screen and (max-width: 539px) {
-  .service .sub_visual {
-    height: 250px;
-    padding: 0;
-  }
-  .service .sub_visual h1 {
-    text-align: center;
-    line-height: 250px;
-  }
-  .service .sub_visual h1::after {
-    width: 190px;
-    position: absolute;
-    top: 130px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .service .inner {
-    padding: 100px 30px;
-  }
-  .service .inner .wrap article {
-    width: 100%;
-    padding: 30px;
-    text-align: center;
-    border: 1px solid #f2f2f2;
-  }
-  .service .inner .wrap article::after {
-    width: 120px;
-    height: 70px;
-    top: -35px;
-    right: -15px;
-  }
-  .service .inner .wrap article a {
-    width: 200px;
-    margin: 0 auto;
-  }
-  .service .inner .wrap .img {
-    display: none;
-  }
-  .service .inner .wrap:nth-of-type(2) article::after {
-    left: -20px;
-  }
-}
 .about .sub_visual h1::after {
   width: 275px;
 }
@@ -1568,6 +1485,7 @@ footer p {
 }
 .community .inner .top .right .insta .img_box a:hover img {
   transform: scale(1.2);
+  filter: grayscale(0);
 }
 .community .inner .mv_box {
   width: 100%;
@@ -1617,47 +1535,78 @@ footer p {
 }
 .board .inner .btns {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+  float: left;
 }
-.board .inner .btns .btn {
+.board .inner .btns a {
   display: inline-block;
   width: 100px;
   height: 40px;
-  line-height: 40px;
+  text-align: center;
+  font: 500 12px/40px "Roboto";
+  color: #ee7d31;
+  border: 1px solid #ee7d31;
+  box-shadow: 2px 5px 15px #eee;
   margin-right: 20px;
+}
+.board .inner .btns a.on {
+  background: #ee7d31;
+  color: #fff;
+}
+.board .inner #searchBox {
+  float: right;
+  width: 250px;
+  font-size: 0;
+  position: relative;
+  margin-bottom: 30px;
+}
+.board .inner #searchBox #search {
+  width: 100%;
+  height: 40px;
+  border: none;
+  padding-left: 10px;
+  margin-right: 10px;
+  box-shadow: 2px 5px 15px #eee;
+}
+.board .inner #searchBox .btnSearch {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: none;
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+}
+.board .inner #searchBox .btnSearch i {
+  font-size: 20px;
+  line-height: 40px;
+  color: #ee7d31;
 }
 .board .inner table {
   width: 100%;
   margin-bottom: 50px;
 }
-.board .inner table tr th {
-  padding: 15px;
-  color: #ee7d31;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  font: bold 14px/1 "Roboto";
-}
-.board .inner table tr th:nth-of-type(1) {
-  width: 8%;
-}
-.board .inner table tr th:nth-of-type(3) {
-  width: 15%;
-}
-.board .inner table tr th:nth-of-type(4) {
-  width: 15%;
+.board .inner table tr:nth-of-type(2n) {
+  display: none;
 }
 .board .inner table tr td {
-  padding: 20px 5px;
+  padding: 30px 5px;
   border-bottom: 1px solid #ddd;
+  font: 400 12px/1.5 "Montserrat";
+  color: #666;
+}
+.board .inner table tr td:nth-of-type(1) {
   text-align: center;
-  font: 300 12px/1 "Roboto";
+  font: 40px/1px "Montserrat";
+  color: rgba(238, 125, 49, 0.8);
+  width: 10%;
 }
-.board .inner table tr td:nth-of-type(2) {
-  text-align: left;
-}
-.board .inner table tr td a {
-  color: #333;
-  font-weight: 500;
+.board .inner table tr td i {
+  color: #ee7d31;
+  font-size: 15px;
+  cursor: pointer;
 }
 .board .inner .pagenation {
   width: 30%;
@@ -1695,13 +1644,14 @@ footer p {
   display: inline-block;
   width: 30px;
   height: 30px;
-  font: bold 11px/30px "Roboto";
+  font: 11px/30px "Montserrat";
   color: #666;
   margin: 0 5px;
   transition: 0.5s;
 }
-.board .inner .pagenation .numbers a:hover {
+.board .inner .pagenation .numbers a.on {
   color: #ee7d31;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 1179px) {
@@ -2415,7 +2365,7 @@ footer p {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: #ee7d31;
+  background: #fff;
   position: absolute;
   top: -45px;
   left: 50%;
@@ -2423,7 +2373,7 @@ footer p {
   text-align: center;
 }
 #popup .close i {
-  color: #fff;
+  color: #ee7d31;
   font-size: 20px;
   line-height: 30px;
 }
