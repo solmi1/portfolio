@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
     <script defer src="js/board.js"></script>
 
 </head>
+
 <body>
     <header id="header_sub">
         <div class="inner">
@@ -23,7 +25,7 @@
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                     <li><a href="portfolio.html">PORTFOLIO</a></li>
-                    <li><a href="community.html">COMMUNITY</a></li>
+                    <li><a href="youtube.html">YOUTUBE</a></li>
                     <li><a href="board.html">BOARD</a></li>
                 </ul>
             </nav>
@@ -31,14 +33,14 @@
             <a href="#" class="btnCall">
                 <span>메뉴호출</span>
             </a>
-            
+
             <nav class="menuMo">
                 <ul id="gnbMo">
                     <li><a href="service.html">SERVICE</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                     <li><a href="portfolio.html">PORTFOLIO</a></li>
-                    <li><a href="pricing.html">COMMUNITY</a></li>
+                    <li><a href="youtube.html">YOUTUBE</a></li>
                     <li><a href="board.html">BOARD</a></li>
                 </ul>
 
@@ -56,164 +58,372 @@
         <div class="sub_visual">
             <h1>BOARD</h1>
         </div>
-        
+
         <div class="inner">
 
             <div class="tit">
                 <h1>FAQ's</h1>
             </div>
 
-            <div class="btns">
-                <a class="on" href="#">FAQ</a>
-                <a href="#">QNA</a>
+            <div class="click">
+                <ul class="btns">
+                    <li><a href="#faq" class="on">FAQ</a></li>
+                    <li><a href="#qna">QNA</a></li>
+                </ul>
             </div>
 
-            <div id="searchBox">
-                <input type="text" id="search">
-                <button class="btnSearch"><i class="fas fa-search"></i></button>
-            </div>
-
-            <table>
+            <table id="faq" class="on">
                 <caption class="h">자유게시판</caption>
-                    <tr>
-                        <td>01</td>
-                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing?</td>
-                        <td>
-                            <i class="fa-solid fa-plus" id="plus"></i>
-                            <i class="fa-solid fa-minus minus" style="display: none;"></i>
-                        </td>
-                    </tr>
-                    <tr class="tb">
-                        <td></td>
-                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit. Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae perferendis explicabo quos distinctio.</td>
-                        <td></td>
-                    </tr>
+                <tr class="title">
+                    <td>01</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing?</td>
+                    <td>
+                        <i class="fa-solid fa-plus" id="plus"></i>
+                        <i class="fa-solid fa-minus minus" style="display: none;"></i>
+                    </td>
+                </tr>
+                <tr class="conts">
+                    <td></td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit.
+                        Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae
+                        perferendis
+                        explicabo quos distinctio.</td>
+                    <td></td>
+                </tr>
 
-                    <tr>
-                        <td>02</td>
-                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, rem?</td>
-                        <td>
-                            <i class="fa-solid fa-plus plus"></i>
-                            <i class="fa-solid fa-minus" style="display: none;"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit. Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae perferendis explicabo quos distinctio.</td>
-                        <td></td>
-                    </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, rem?</td>
+                    <td>
+                        <i class="fa-solid fa-plus plus"></i>
+                        <i class="fa-solid fa-minus" style="display: none;"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit.
+                        Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae
+                        perferendis
+                        explicabo quos distinctio.</td>
+                    <td></td>
+                </tr>
 
-                    <tr>
-                        <td>03</td>
-                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tempore amet quam at quasi animi?</td>
-                        <td>
-                            <i class="fa-solid fa-plus plus"></i>
-                            <i class="fa-solid fa-minus" style="display: none;"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit. Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae perferendis explicabo quos distinctio.</td>
-                        <td></td>
-                    </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tempore amet quam at quasi
+                        animi?
+                    </td>
+                    <td>
+                        <i class="fa-solid fa-plus plus"></i>
+                        <i class="fa-solid fa-minus" style="display: none;"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit.
+                        Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae
+                        perferendis
+                        explicabo quos distinctio.</td>
+                    <td></td>
+                </tr>
 
-                    <tr>
-                        <td>04</td>
-                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo deleniti voluptatibus iure inventore?</td>
-                        <td>
-                            <i class="fa-solid fa-plus plus"></i>
-                            <i class="fa-solid fa-minus" style="display: none;"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit. Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae perferendis explicabo quos distinctio.</td>
-                        <td></td>
-                    </tr>
+                <tr>
+                    <td>04</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo deleniti voluptatibus
+                        iure
+                        inventore?</td>
+                    <td>
+                        <i class="fa-solid fa-plus plus"></i>
+                        <i class="fa-solid fa-minus" style="display: none;"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit.
+                        Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae
+                        perferendis
+                        explicabo quos distinctio.</td>
+                    <td></td>
+                </tr>
 
-                    <tr>
-                        <td>05</td>
-                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa?</td>
-                        <td>
-                            <i class="fa-solid fa-plus plus"></i>
-                            <i class="fa-solid fa-minus" style="display: none;"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit. Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae perferendis explicabo quos distinctio.</td>
-                        <td></td>
-                    </tr>
+                <tr>
+                    <td>05</td>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa?</td>
+                    <td>
+                        <i class="fa-solid fa-plus plus"></i>
+                        <i class="fa-solid fa-minus" style="display: none;"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit.
+                        Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae
+                        perferendis
+                        explicabo quos distinctio.</td>
+                    <td></td>
+                </tr>
 
-                    <tr>
-                        <td>06</td>
-                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa?</td>
-                        <td>
-                            <i class="fa-solid fa-plus plus"></i>
-                            <i class="fa-solid fa-minus" style="display: none;"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit. Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae perferendis explicabo quos distinctio.</td>
-                        <td></td>
-                    </tr>
+                <tr>
+                    <td>06</td>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa?</td>
+                    <td>
+                        <i class="fa-solid fa-plus plus"></i>
+                        <i class="fa-solid fa-minus" style="display: none;"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit.
+                        Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae
+                        perferendis
+                        explicabo quos distinctio.</td>
+                    <td></td>
+                </tr>
 
-                    <tr>
-                        <td>07</td>
-                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa?</td>
-                        <td>
-                            <i class="fa-solid fa-plus plus"></i>
-                            <i class="fa-solid fa-minus" style="display: none;"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit. Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae perferendis explicabo quos distinctio.</td>
-                        <td></td>
-                    </tr>
+                <tr>
+                    <td>07</td>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa?</td>
+                    <td>
+                        <i class="fa-solid fa-plus plus"></i>
+                        <i class="fa-solid fa-minus" style="display: none;"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit.
+                        Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae
+                        perferendis
+                        explicabo quos distinctio.</td>
+                    <td></td>
+                </tr>
 
-                    <tr>
-                        <td>08</td>
-                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa?</td>
-                        <td>
-                            <i class="fa-solid fa-plus plus"></i>
-                            <i class="fa-solid fa-minus" style="display: none;"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit. Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae perferendis explicabo quos distinctio.</td>
-                        <td></td>
-                    </tr>
+                <tr>
+                    <td>08</td>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa?</td>
+                    <td>
+                        <i class="fa-solid fa-plus plus"></i>
+                        <i class="fa-solid fa-minus" style="display: none;"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit.
+                        Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae
+                        perferendis
+                        explicabo quos distinctio.</td>
+                    <td></td>
+                </tr>
 
-                    <tr>
-                        <td>09</td>
-                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa?</td>
-                        <td>
-                            <i class="fa-solid fa-plus plus"></i>
-                            <i class="fa-solid fa-minus" style="display: none;"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit. Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae perferendis explicabo quos distinctio.</td>
-                        <td></td>
-                    </tr>
+                <tr>
+                    <td>09</td>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa?</td>
+                    <td>
+                        <i class="fa-solid fa-plus plus"></i>
+                        <i class="fa-solid fa-minus" style="display: none;"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit.
+                        Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae
+                        perferendis
+                        explicabo quos distinctio.</td>
+                    <td></td>
+                </tr>
 
-                    <tr>
-                        <td>10</td>
-                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa?</td>
-                        <td>
-                            <i class="fa-solid fa-plus plus"></i>
-                            <i class="fa-solid fa-minus" style="display: none;"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit. Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae perferendis explicabo quos distinctio.</td>
-                        <td></td>
-                    </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa?</td>
+                    <td>
+                        <i class="fa-solid fa-plus plus"></i>
+                        <i class="fa-solid fa-minus" style="display: none;"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit.
+                        Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae
+                        perferendis
+                        explicabo quos distinctio.</td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <table id="qna">
+                <caption class="h">자유게시판</caption>
+                <tr>
+                    <td>01</td>
+                    <td>Lorem ipsum dolor sit amet?</td>
+                    <td>
+                        <i class="fa-solid fa-plus" id="plus"></i>
+                        <i class="fa-solid fa-minus minus" style="display: none;"></i>
+                    </td>
+                </tr>
+                <tr class="tb">
+                    <td></td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit.
+                        Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae
+                        perferendis
+                        explicabo quos distinctio.</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>02</td>
+                    <td>Lorem ipsum dolor sit, rem?</td>
+                    <td>
+                        <i class="fa-solid fa-plus plus"></i>
+                        <i class="fa-solid fa-minus" style="display: none;"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit.
+                        Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae
+                        perferendis
+                        explicabo quos distinctio.</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>03</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tempore amet quam at quasi
+                        animi?
+                    </td>
+                    <td>
+                        <i class="fa-solid fa-plus plus"></i>
+                        <i class="fa-solid fa-minus" style="display: none;"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit.
+                        Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae
+                        perferendis
+                        explicabo quos distinctio.</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>04</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo deleniti voluptatibus
+                        iure
+                        inventore?</td>
+                    <td>
+                        <i class="fa-solid fa-plus plus"></i>
+                        <i class="fa-solid fa-minus" style="display: none;"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit.
+                        Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae
+                        perferendis
+                        explicabo quos distinctio.</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>05</td>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa?</td>
+                    <td>
+                        <i class="fa-solid fa-plus plus"></i>
+                        <i class="fa-solid fa-minus" style="display: none;"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit.
+                        Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae
+                        perferendis
+                        explicabo quos distinctio.</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>06</td>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa?</td>
+                    <td>
+                        <i class="fa-solid fa-plus plus"></i>
+                        <i class="fa-solid fa-minus" style="display: none;"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit.
+                        Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae
+                        perferendis
+                        explicabo quos distinctio.</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>07</td>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa?</td>
+                    <td>
+                        <i class="fa-solid fa-plus plus"></i>
+                        <i class="fa-solid fa-minus" style="display: none;"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit.
+                        Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae
+                        perferendis
+                        explicabo quos distinctio.</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>08</td>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa?</td>
+                    <td>
+                        <i class="fa-solid fa-plus plus"></i>
+                        <i class="fa-solid fa-minus" style="display: none;"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit.
+                        Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae
+                        perferendis
+                        explicabo quos distinctio.</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>09</td>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa?</td>
+                    <td>
+                        <i class="fa-solid fa-plus plus"></i>
+                        <i class="fa-solid fa-minus" style="display: none;"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit.
+                        Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae
+                        perferendis
+                        explicabo quos distinctio.</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>10</td>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa?</td>
+                    <td>
+                        <i class="fa-solid fa-plus plus"></i>
+                        <i class="fa-solid fa-minus" style="display: none;"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius nemo ea natus fugit.
+                        Dolorem sit voluptatum a sed iure aliquam, inventore doloremque magni, culpa vitae
+                        perferendis
+                        explicabo quos distinctio.</td>
+                    <td></td>
+                </tr>
             </table>
 
             <div class="pagenation">
@@ -240,4 +450,5 @@
         <p>Copyright &copy 2022 Techoners - All rights reserved.</p>
     </footer>
 </body>
+
 </html>
